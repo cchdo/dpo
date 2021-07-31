@@ -1,0 +1,80 @@
+Example 2B: Sea-floor Dimensions
+================================
+
+DPO Section 2.2 deals with the configuration, dimensions, and principal features of the global sea floor. You can use the map customization features of Java OceanAtlas to examine the sea floor by changing the bathymetric information which is plotted on a map plot, by selecting sub-regions of maps to examine more closely, and by making maps which provide differing perspectives of the Earth.
+
+Files that may be needed or created in this example:
+
+* SIO.joa
+* mycity.joa
+
+.. hint::
+  Useful Terms in Minimum JOA Data Headers
+
+  * :term:`Latitude`
+  * :term:`Longitude`
+  * :term:`Pressure`
+  * :term:`Section`
+  * :term:`Stations`
+
+Exercise 2B-01: Ocean Maps - Examining the World Ocean
+------------------------------------------------------
+Continue from 2A-02:
+
+You can use the Java OceanAtlas map to examine various features of the World Ocean.
+
+.. note::
+  The principal oceans are the Atlantic, Indian, and Pacific Oceans.
+  Oceanographers recognize another major ocean, the Southern Ocean, due to its unique features and importance to the global ocean circulation.
+  The Arctic Ocean, although a much smaller region than the other oceans, is sometimes also recognized as a principal ocean.
+
+* Compare the relative sizes and shapes of the Atlantic, Indian, and Pacific Oceans
+* Identify the Southern Ocean. Remember in the DPO text how, specifically, the Southern Ocean differs geographically from the other oceans?
+* With the map plot as the front-most window, bring up the **Configure Map Plot** dialog box so that you can change the characteristics of the plot.
+  To bring up the **Configure Map Plot** dialog box:
+
+  * Double-click or control-click on a map plot
+  * Or type [ctrl/cmd]-R or **Edit → Edit: plotname** when a map plot is the front-most window
+
+* In the **Configure Map Plot** dialog box set the spacing of the plotted :term:`latitude` lines to 20 degrees and that of the plotted :term:`longitude` lines to 20 degrees, and click on **OK**.
+  Now the **Mercator** world ocean map plot has the latitude and longitude lines at 20-degree intervals
+
+
+Exercise 2B-02: Analyzing Mercator Projections
+----------------------------------------------
+For the following steps, recall that at the equator the distance spanned by one degree of latitude is the same as the distance spanned by one degree of longitude:
+
+* How does the **Mercator** map distort areas as one moves from the equator toward the poles?
+* Using a globe (or download and use the application **Google Earth**) and your JOA world map, compare the relative sizes of various land masses with their representation on the **Mercator** map plot. 
+  For example compare the relative sizes of South America and Greenland on the globe with their relative sizes on the **Mercator** map plot.
+* How might the use of a **Mercator** map plot affect interpretation of a map of plotted data? (For example, if the areas of various land masses were considered to be 'plotted data', how would the **Mercator** projection affect interpretation of land area?)
+* How might this map projection affect interpretation of the map of some parameter such as ocean surface temperature?
+* Can you think of any reasons that, distortion aside, a **Mercator** plot might be useful?
+
+Exercise 2B-03: Ocean Maps - Map units and Dimensions
+-----------------------------------------------------
+
+.. hint::
+  Useful Information: Global Measurements
+
+  Coordinates
+    * Latitudes and longitudes are commonly provided in degrees, minutes, and seconds; in degrees and decimal minutes; or in decimal degrees. The number of decimal places used varies depending on precision. They are written in the respective format:
+
+      * ddd° mm' ss" or ddd mm ss
+      * ddd° mm.mm' or ddd mm.mm
+      * ddd.ddddd° or ddd.ddddd
+
+    * There are 60 seconds in a minute of position, and 60 minutes in a degree of position.
+    * To convert a position from degrees and decimal minutes to decimal degrees:
+
+      * ddd + mm.mm/60 = ddd.ddddd
+
+  Nautical Mile
+    * One nautical mile is the distance spanned by one minute of latitude.
+    * One nautical mile at the equator is the distance spanned by one degree of longitude. It decreases poleward as a function of the cosine of latitude.
+    * 1 nautical mile = 1.1508 statute miles = 1852 meters = 6076.10 feet.
+
+* What is the distance, in meters, represented by one tenth of a minute of latitude, by one hundredth of a minute?
+* By one tenth, one hundredth, one thousandth, and one ten thousandth of a degree of latitude?
+* What is the distance, in meters, represented by one tenth and one hundredth of a degree of longitude at the equator, and at 30, 45, 60, and 75 degrees latitude?
+* To know the position to “within one ship length”, for an 85-meter ship to what precision in decimal degrees, and in degrees and minutes, must one express position (latitude and longitude) at 45 degrees latitude?

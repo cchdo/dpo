@@ -1,11 +1,15 @@
 Chapter Two
 ===========
 
+Ocean dimensions, shapes and bottom materials
+---------------------------------------------
+
 .. toctree::
   :maxdepth: 2
   :caption: Contents:
 
   2a
+  2b
 
 
 .. admonition:: Data files supplied for Chapter 2 exercises
@@ -14,10 +18,6 @@ Chapter Two
   * mycity.jos
 
   Download: :download:`Chapter 2 Data Files <./DPO_data_chapter_2.zip>`
-  
-
-Ocean dimensions, shapes and bottom materials
----------------------------------------------
 
 Goals
 `````

@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Descriptive Physical Oceanography JOA Examples'
-copyright = '2021, Lynne D. Talley, George L. Pickard, William J. Emery, James H. Swift'
+copyright = 'Copyright © 2011 Elsevier Inc. All rights reserved.'
 author = 'Lynne D. Talley, George L. Pickard, William J. Emery, James H. Swift'
 
 
@@ -50,6 +50,7 @@ html_theme = 'furo'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+html_title = project
 
 latex_documents = [
     ("index", 'dpo_joa.tex', project,

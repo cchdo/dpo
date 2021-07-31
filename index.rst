@@ -3,8 +3,12 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Descriptive Physical Oceanography JOA Examples's documentation!
-==========================================================================
+Descriptive Physical Oceanography JOA Examples
+==============================================
+
+.. figure:: images/frontpage.jpg
+
+   The oceanographic research vessel Roger Revelle (UCSD Scripps Institution of Oceanography) off Antarctica.
 
 .. toctree::
    :glob:
@@ -12,12 +16,4 @@ Welcome to Descriptive Physical Oceanography JOA Examples's documentation!
    :caption: Contents:
 
    */index
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   glossary

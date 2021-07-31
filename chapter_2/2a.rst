@@ -53,7 +53,90 @@ Java OceanAtlas (JOA) has default actions and appearances that are configured vi
   
     FIG 2a-03 The CTD decimation of the configure preferences dialog box
 
-  * The **CTD Decimation** panel is only important when you are importing :term:`CTD` data which are not already in a JOA binary data file (JOA binary format files have file extension .joa)
+  * The **CTD Decimation** panel is only important when you are importing :term:`CTD data<CTD data (Conductivity, Pressure, Depth)>` which are not already in a JOA binary data file (JOA binary format files have file extension .joa)
 
     * Selecting Constant every **10 (or 20)** db is a good choice
     * Select **No decimation** if you want to import all levels of each new CTD data profile into JOA, This will result in a larger file than if the file were decimated
+
+* Preference changes under the **Import** panel:
+
+  .. figure:: figures/fig2a-04.png
+  
+    FIG 2a-04 The import panel of the configure preferences dialog box
+
+  * The **Import** panel is important if you are importing new data into JOA that are not already in JOA binary format (JOA binary format files have file extension .joa), which is an action not needed for the DPO JOA Examples. See the JOA User Guide for more information about these
+  * The settings tell JOA what to do with various pieces of information in a text data file
+  * The default settings are designed to weed out suspicious and bad data
+  * JOA users intending to import their own data files should refer to the **JOA User Guide**
+
+* Preference changes under remaining panels:
+
+  * The remaining **Configure Preferences** panels are not of direct concern to most working through the DPO JOA Examples
+
+    .. note::
+      When you save new or revised JOA preferences (or color bars, or interpolation level files, etc.), JOA will prompt you to save a file in the JOA_Support folder.
+      If there is already a file of that name in JOA_Support, JOA will ask if you really want to replace the file. 
+      Yes, you usually want to replace it. 
+      Changes made to JOA Configure Preferences - but not saved - will be enabled only through the current JOA session and then discarded when you quit JOA. 
+      This can be handy if you wish to modify JOA behavior only for one JOA session.
+
+
+.. tip::
+  Java OceanAtlas User Guide can be found in the `JOA Application <https://joa.ucsd.edu/joa>`_ tab.
+
+
+Exercise 2A-02: Ocean Maps - Making a Mercator Map
+--------------------------------------------------
+
+* Start JOA
+* :term:`File → Open…<Menu Bar (JOA)>` →SIO.joa
+* :term:`Plots<Menu Bar (JOA)>` → Map…
+
+  .. note::
+    Make sure the data window is open and active to access the **Plots** menu.
+
+* In the General Settings panel set up a Mercator projection map with characteristics of:
+
+  .. figure:: figures/fig2a-05.png
+  
+    FIG 2a-05 Dialog box for Mercator projection map
+
+  * **T**\ op: 80 (degrees North)
+  * **B**\ ottom: -80 (degrees South)
+  * **L**\ eft: 120 (degrees East)
+  * **R**\ ight limits: 119.99 (degrees East)
+  * :term:`Latitude` Spacing: 20 (degrees)
+  * :term:`Longitude` Spacing: 30 (degrees)
+  
+* The **Bathymetry** panel should look like this by default; if not, change it to match:
+
+  .. figure:: figures/fig2a-06.png
+  
+    FIG 2a-06 The Bathymetry panel of the Configure Map Plot panel
+
+* Click on the **Plot** button and JOA will draw a map plot looking like this:
+
+  .. figure:: figures/fig2a-07.png
+  
+    FIG 2a-07 JOA map plot made with suggested settings
+
+
+To change the appearance of this map to look more like the global ocean map figure in Chapter 2 of the DPO textbook:
+
+* With the map plot as the front-most window, bring up the **Configure Map Plot** dialog box so that you can change the characteristics of the plot. 
+  To bring up the **Configure Map Plot** dialog box, either:
+
+  * Double-click or control-click on a map plot
+  * Or type [ctrl/cmd]-R or **Edit → Edit: plotname** when a map plot is the front-most window
+
+* Click on the **Bathymetry** panel in the dialog box to bring up the **Bathymetry** panel
+* Select the ROSE-map-like_cbr.xml color bar under **Colorbars**:
+* Click on **OK** to draw this plot:
+
+  .. figure:: figures/fig2a-08.png
+  
+    FIG 2a-08 Mercator map plot with ROSE color scheme
+
+  The black dot on southern California is the location of the single coordinate in the SIO.joa data file, which is the location of the Scripps Institution of Oceanography.
+
+We will work more with this map in Exercise 2B.
