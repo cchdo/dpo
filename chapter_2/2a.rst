@@ -1,0 +1,59 @@
+Example 2A: Dimensions
+======================
+You can use Java OceanAtlas (JOA) to make global ocean maps similar to those in the DPO text.
+
+JOA needs at least one data point before it will draw a map. We have provided the data file SIO.joa, with one data value at the location of the UCSD Scripps Institution of Oceanography. (You will create the mycity.joa file in Example 2E)
+
+Files that may be needed or created in this example:
+
+* SIO.joa
+* mycity.joa
+
+Exercise 2A-01: First Things First - Start JOA and Set JOA Preferences
+----------------------------------------------------------------------
+
+Java OceanAtlas (JOA) is configured to have a specified appearance and a specified result for various actions (such as how it translates data files when it opens them), and some JOA features can be enabled/disabled. This configuration is handled via the JOA “Preferences” dialog box. We pre-configured JOA to fit the needs of DPO JOA Examples users. But if you are not dealing with a new/fresh copy of JOA, some previous user may have altered the pre-set Preferences. Here we will show the Preferences panels in our recommended configuration for the DPO JOA Examples, and briefly discuss some of the options should you later choose to change the Preferences.
+
+* Start JOA by double clicking on the JOA icon, or by whatever other means you start an application on your computer
+  
+.. note::
+  There is no big JOA window ... all you will see when JOA is first opened is its menu bar, and maybe a blank window for a JOA feature we will ignore here.
+  The appearance of JOA when you first start it will be slightly different depending on the computer you use, but it will look something like the figure below (on Mac OS X).
+
+.. figure:: figures/fig2a-01.png
+
+  FIG 2a-01 JOA Window upon starting.
+
+The JOA "Preferences" menu selection is found under the "Java Ocean Atlas" menu:
+
+Java OceanAtlas (JOA) has default actions and appearances that are configured via a **Preferences** dialog box. To edit these go to:
+
+* **JavaOceanAtlas** (from menu) → **Preferences**
+* Preference changes under the **General** panel
+
+  .. figure:: figures/fig2a-02.png
+  
+    FIG 2a-02 The first panel, General, should look like this. 
+
+  * Connect observation line width:
+
+    * As the value of the selected number increases, so does the width of the line
+
+* Default autoscale color scheme:
+
+  * The default color scheme is **Rainbow(inv)-32**
+  * The color scheme number refers to the number of divisions/contours in a given color bar
+  * **Blue-White-Red** schemes are useful for showing where values are higher and lower than some in-between (white) numerical values
+  * **Rainbows** give vivid color ranges
+  * **Rainbow(inv)** inverts the order of the colors relative to the order of numerical contour values, compared to **Rainbow**
+
+* Preference changes under the **CTD Decimation** panel:
+
+  .. figure:: figures/fig2a-03.png
+  
+    FIG 2a-03 The CTD decimation of the configure preferences dialog box
+
+  * The **CTD Decimation** panel is only important when you are importing :term:`CTD` data which are not already in a JOA binary data file (JOA binary format files have file extension .joa)
+
+    * Selecting Constant every **10 (or 20)** db is a good choice
+    * Select **No decimation** if you want to import all levels of each new CTD data profile into JOA, This will result in a larger file than if the file were decimated
