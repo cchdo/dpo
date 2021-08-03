@@ -10,6 +10,9 @@ Ocean dimensions, shapes and bottom materials
 
   2a
   2b
+  2c
+  2d
+  2e
 
 
 .. admonition:: Data files supplied for Chapter 2 exercises

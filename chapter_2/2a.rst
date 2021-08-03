@@ -85,6 +85,8 @@ Java OceanAtlas (JOA) has default actions and appearances that are configured vi
   Java OceanAtlas User Guide can be found in the `JOA Application <https://joa.ucsd.edu/joa>`_ tab.
 
 
+.. _2a-02:
+
 Exercise 2A-02: Ocean Maps - Making a Mercator Map
 --------------------------------------------------
 

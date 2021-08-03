@@ -1,0 +1,72 @@
+Example 2E: DPO Extra Topic; Making a .joa file
+===============================================
+
+.. admonition:: Learn More
+  :class: seealso
+
+  JOA Data Files
+
+  * Java OceanAtlas recognizes several types of data files. The simplest to create is a Java OceanAtlas text (spreadsheet) data file.
+  * A Java OceanAtlas text (spreadsheet) data file begins with one line of tab-delimited header names and continues with N lines of tab-delimited data (each line with one value for each header category). The file must be saved as plain text (ASCII) and the file name must end with .jos.
+  * A Java OceanAtlas text (spreadsheet) data file must have at least one line of data in addition to the header line.
+  * In a Java OceanAtlas text (spreadsheet) data file, the minimum content of the header line is a :term:`station <stations>` number (**STATION**), :term:`latitude` (**LATITUDE**), :term:`longitude` (**LONGITUDE**) and :term:`pressure` (**PRES**), each separated by a standard character, usually a tab character.
+  * Java OceanAtlas utilizes positions expressed in decimal degrees, with negative for south latitudes and for west longitudes.
+  * Java OceanAtlas works with any **pressure**-sequenced data. Pressure (abbreviated PRES in Java OceanAtlas) is used because it is now more commonly measured than depth as the vertical index when water samples are collected.
+  * Normally the pressures used by Java OceanAtlas are meant to be the pressure values at the level of each set of property measurements at that station. 
+    In most cases there are also headers and data for the water properties measured at the pressures/levels for each measurement, such as temperature (**TEMP**) or salinity (**SALT**). 
+    There may be one to several thousand pressures/levels at each station. JOA does not, however, require that there be more than one station with one level (one pressure), and JOA does not require that there be any measured data, other than pressure, at the level(s) of measurement.
+
+Files that may be needed or created in this example:
+
+* mycity.joa
+
+
+Exercise 2E-01: Ocean Maps - Plot Your City's Location
+------------------------------------------------------
+Here we show you how to make your own JOA data file, similar to SIO.joa, yet in this case a data file with the location of your choice city.
+
+* Look up the latitude and longitude of a city either with a global map or online resource.
+  See :ref:`Resources` for helpful links.
+  For example, see http://go.hrw.com/atlas/norm_htm/oceans.htm
+* Convert the latitude and longitude to decimal degrees, using the JOA sign conventions.
+  For example, the latitude 13° 43.7' S will be written as -13.72 in decimal degrees with this convention.
+* Substitute the name of the city, its latitude, and its longitude, for 'SANDIEGO', '32.74', and '-117.16', respectively, in the example below, writing these lines into any text/word processor:
+
+  * STATION :kbd:`tab` LATITUDE :kbd:`tab` LONGITUDE :kbd:`tab` PRES :kbd:`return` SANDIEGO :kbd:`tab` 32.74 :kbd:`tab` -117.16 :kbd:`tab` 1.0 :kbd:`return`
+  * The use of :kbd:`tab` in the above denotes a tab character and :kbd:`return` denotes a carriage return.
+
+* Save this two-line file as a plain text file with the name mycity.jos, or any other name with the suffix .jos.
+* Start Java OceanAtlas (on most computers by double-clicking on its icon).
+* **File → Open…** → mycity.jos
+* The Java OceanAtlas **Spreadsheet Import Options** dialog box will open up, and look approximately like this:
+  
+  .. figure:: figures/fig2e-01.png
+
+    FIG 2e-01 Java OceanAtlas Spreadsheet Import Options dialog box
+
+* You can simply click on **OK**, because the JOA default settings are fine for this data file. After clicking on **OK**, the JOA Data window will open up.
+  It will look approximately like this:
+
+  .. figure:: figures/fig2e-02.png
+
+    FIG 2e-02 Java OceanAtlas Data Window
+
+.. note::
+  The JOA Data Window contains:
+
+  * A data display of all measured and calculated data (keyed to current x-z location in the data)
+  * The current color bar (with arrow indicating color for current x-z location)
+  * A section display illustrating all data points in current section(s)
+
+* You are now ready to work with this simple data set in Java OceanAtlas!
+* To save your new data file, select **Save As…** under the JOA **File** menu, and use the **Save data as**: dialog box to rename your file (if you wish) and save it to whatever location on your computer you wish.
+* Following the instructions in :ref:`Exercise 2A-02<2a-02>` for starting JOA, opening a data file, and making a Mercator world map, make a map plot showing the location of your chosen city.
+
+This exercise of making your own JOA text data file, opening it in JOA, and making a map from it may help you to understand the essential elements of a JOA text data file.
+In the JOA User Guide (found in the `JOA Application <https://joa.ucsd.edu/joa>`_ tab) you will find further information about making your own data files that JOA can read.
+
+Additional Resources:
+
+* Holt, Rinehart and Winston maps: http://go.hrw.com/atlas/norm_htm/oceans.htm
+* Google Earth application: http://earth.google.com/
+* Astro Dienst (Find longitude & latitude of a city): http://www.astro.com/atlas
