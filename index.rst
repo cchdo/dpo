@@ -70,5 +70,15 @@ Also with
    :maxdepth: 2
    :caption: Contents:
 
-   */index
+   background/index
+   chapter_1/index
+   chapter_S1/index
+   chapter_2/index
+   chapter_3/index
+   chapter_5/index
+   chapter_S7/index
+   chapter_8/index
+   chapter_S8/index
+   chapter_14/index
+   chapter_S15/index
    glossary
