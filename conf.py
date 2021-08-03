@@ -54,5 +54,5 @@ html_title = project
 
 latex_documents = [
     ("index", 'dpo_joa.tex', project,
-     author, 'howto'),
+     author, 'manual'),
 ]
