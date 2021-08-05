@@ -87,7 +87,7 @@ Tools
 
   Fig 11i-01 Indian sections map
 
-DPO Chapter 12 Sections
+DPO Chapter 11 Sections
 ```````````````````````
 
 DPO JOA examples are available for the following **emphasized** sections:
