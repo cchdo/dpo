@@ -79,6 +79,8 @@ Also with
    chapter_S7/index
    chapter_8/index
    chapter_S8/index
+   chapter_9-14/index
+   chapter_9/index
    chapter_10/index
    chapter_11/index
    chapter_12/index
