@@ -75,6 +75,7 @@ Also with
    chapter_S1/index
    chapter_2/index
    chapter_3/index
+   chapter_4/index
    chapter_5/index
    chapter_7/index
    chapter_S7/index

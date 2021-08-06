@@ -1,0 +1,9 @@
+Example 4A: Before we get started
+=================================
+In DPO Chapter 4, the discussion concerns the distribution of key seawater characteristics central to physical oceanography, both at the sea surface and along meridional sections through the Atlantic, Pacific, and Indian Oceans.
+
+In the DPO JOA Examples for this chapter, we will use JOA and a specially-prepared data file to plot the characteristics of the surface waters of the World Ocean.
+
+Then we will use other data files to examine the vertical distribution of water properties along south-to-north transects through the eastern Atlantic, central Pacific, and eastern Indian Oceans.
+
+To some extent this will duplicate figures in DPO Chapter 4, but with JOA one has the opportunity to explore - for example, sub-areas of the surface property maps and the upper layers of the transects can be enlarged. 
