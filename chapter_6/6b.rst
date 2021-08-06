@@ -1,0 +1,135 @@
+Example 6B: Sections with horizontal axis other than distance
+=============================================================
+We have plotted vertical sections with horizontal axes based on space - either distance or latitude (or longitude). What if one wanted to examine changes over time with JOA?
+
+Oceanographers are interested to learn more about how the ocean varies over time. With the advent of satellite remote sensed data, it has become possible to obtain approximately daily global coverage of some parameters - for example ocean surface temperature. Satellite-based observations cannot observe the ocean interior.
+
+Various drifting or moored instruments can provide ocean interior data over the lifetime of the instruments, or the span of the lifetimes of their replacements. But the parameters these can sample are limited, though the list is continually growing.
+
+Repeated hydrographic observations are an expensive and time-consuming, but potentially quite valuable, method of observing variations in the ocean interior over a wide range of parameters.
+
+Currently the International Ocean Carbon Coordination Project (IOCCP; http://www.ioccp.org/) is carrying out repeats of selected basin-scale transects at approximately ten-year intervals. Some nations carry out annual or seasonal occupations of somewhat shorter, but valuable transects (for example, see the Pacific Ocean PR17 or the A01/AR07 listings at http://cchdo.ucsd.edu).
+
+At a few key locations, oceanographers and national organizations have worked to provide ca. monthly observations. One of these is the Hawaii Ocean Time-series (HOT) measurements (see http://hahana.soest.hawaii.edu/hot/hot_jgofs.html). We have downloaded and prepared for JOA some of the HOT Station Aloha bottle data in the upper 300 meters, and provide these as the data file HOT_bottle_nutrient_data.joa.
+
+.. admonition:: Learn More
+  :class: seealso
+
+  How the HOT_bottle_nutrient_data.joa data file was prepared:
+
+  Some data files take a bit of work to get into Java OceanAtlas. To give you an idea of how a slightly problematic downloaded text data file is prepared for JOA and these exercises, here is a prècis of the steps the author (Swift) went through to create the HOT_bottle_nutrient_data.joa data file (excluding trial and error mistakes):
+
+  * Go to the HOT website (http://hahana.soest.hawaii.edu/hot/hot_jgofs.html)
+  * Go to the **Interactive Access** to **HOT** data page
+  * Select **Bottle Data** from the **Data Extraction List** (this puts one at http://hahana.soest.hawaii.edu/hot/hot-dogs/bextraction.html)
+  * For Station Aloha choose the maximum date range (at time this was written this range was October 1, 1988 through December 3, 2006)
+  * Type 0 for **Starting Depth**
+  * Type 300 for **Ending Depth**
+  * Choose parameters **Potential Temperature**, **CTD Salinity**, **Bottle Dissolved Oxygen**, **Phosphate**, **Silicate**, and **Nitrate+Nitrite**
+  * Click the **Submit** button
+  * **Select all** to select all the data
+  * Paste the data into a text editor (e.g., MS Word)
+  * Save as a .txt plain text file
+  * Open the file in a table editor (e.g., MS Excel), choosing **comma** for the file delimiter
+  * Delete columns cbotid and time
+  * Change headings press, theta, csal, boxy, phos, nit, sil to PRES, THTA, SALT, O2, PO4, NO3, and SIO3, respectively
+  * Delete the units row (but remember the units)
+  * Create two new columns on left side
+  * Label first new column SECTION, use “HOT” for the first data entry, and fill-down that (HOT) to fill out the SECTION column
+  * Copy the DATE column and paste it into the second new column
+  * Select the column and play with the **cells...** choices under Excel's **Format** menu to convert the dates into some sort of unique numeric identifier
+  * Re-label this column “STATION”
+
+    .. note::
+      The problem we are trying to solve here is how to come up with unique station numbers for each of the many HOT cruises to the Aloha site over the years, with ascending numbers
+
+  * Add two new columns to the right of the STATION column
+  * Label the first LATITUDE and the second LONGITUDE
+  * In the first row underneath each write 22.75 (for 22° 45' N, the HOT station Aloha latitude; from the HOT web site) and -158 (for 158°W, the HOT station Aloha longitude) and fill-down both columns
+  * Select all the data and sort them by NO3 (ascending)
+  * Delete all rows (at the top of the list, excluding the header) with missing (“-9”) NO3
+  * Re-sort data by station (ascending) and by PRES (ascending)
+  * Select the original DATE column and via the **cells...** choice under Excel's **Format** menu change the date format to dd-MMM-yyyy
+  * Save the file as a tab-delimited-text file (.txt) named HOT_bottle_nutrient_data.txt
+  * Quit Excel
+  * Open HOT_bottle_nutrient_data.txt in MS Word
+  * Using Word's **replace** function, change all “Jan” to “01”, all “Feb” to “02”, and so forth for all 12 months of the year
+  * Turn on Word's show all non-printing characters' feature and eliminate all instances of tabs immediately preceding end-of-line characters (there were ca. 15 of these extra tab characters after the author downloaded the data; no idea why these were there, but they are fatal to JOA data import)
+  * Save the file as a plain text file
+  * Change the suffix from .txt to .jos (this is what Java OceanAtlas expects for a tab-delimited plain text spreadsheet data file)
+  * Here is how the first 4 rows of the file looked (rows are wrapped-around here):
+
+    .. figure:: figures/fig6b-01.png
+
+      Fig 6b-01 Tab-delimited plain text spreadsheet data file
+
+  Loading the text file into Java OceanAtlas
+
+  * Start JOA
+  * In **Preferences** under the Java OceanAtlas menu, on the **General** panel be sure the date format is set to dd-MM-yyyy
+  * On the **Import** panel of **Preferences** de-select **Convert temperatures from ITS90 to IPTS68** (because the HOT data are already ITS90 temperatures); select **Convert from mass to volume units** and select **Translate parameter names on read and import**
+  * Now, from the JOA **Open…** command, open the file HOT_bottle_nutrient_data.jos
+  * This will bring up the JOA **Spreadsheet Import Options** dialog box, which you should set up as follows:
+
+    .. figure:: figures/fig6b-02.png
+
+      Fig 6b-02 Spreadsheet Import Options dialog box
+
+  * Clicking **OK** should result in the file being imported
+  * Save the file as HOT_bottle_nutrient_data.joa
+  * Open
+
+Files that may be needed or created in this example:
+
+* HOT_bottle_nutrient_data.joa
+
+
+Exercise 6b-01: Other Plots - Using Time As the X-Axis on a Contour (Vertical Section) Plot
+-------------------------------------------------------------------------------------------
+* Start JOA
+* **File → Open…** → HOT_bottle_nutrient_data.joa
+ 
+  The JOA Data Window default station display (at the bottom of the Data Window) is normally set to offset successive stations by distance, but since the HOT data are all at the same location, the display shows little.
+ 
+* Double-click on the station display at the bottom of the data window, which brings up the **Configure Cross Section** dialog box
+* Set up the** Configure Cross Section** panel as seen below:
+
+  .. figure:: figures/fig6b-03.png
+
+    Fig 6b-03 Configure Cross Section panel
+
+* After clicking OK the Data Window should appear like this:
+
+  .. figure:: figures/fig6b-04.png
+
+    Fig 6b-04 Station panel
+
+  You can see that the HOT bottle nutrient data set contains many successive re-occupations of the same site, with somewhat uneven sampling in the upper 300 meters from one occupation to the next.
+
+* **Plots → Contour…**
+* Set up a JOA vertical section (Contour) plot of salinity in the upper 300 meters by choosing PRES-0-300_srf.xml under **Interpolation surfaces** and **Time** under **Offset** as shown below:
+
+  .. figure:: figures/fig6b-05.png
+
+    Fig 6b-05 Primary Contours panel of the Contour Plot dialog box
+
+* Create a custom salinity color bar:
+
+  * With the SALT-Global_cbr.xml color bar chosen under **Colorbars**:
+  * Double-click on the color bar to the right to bring up the **Colorbar Editor**
+  * Change the lower and upper limits to 34.3 and 35.4, respectively
+  * Click on the linear ramp generator after **Create with shape**:
+  * Click **OK**
+
+  .. figure:: figures/fig6b-06.png
+
+    Fig 6b-06 Colorbar Editor panel
+
+* When you click **Plot** in the **Contour Plot** dialog box, you get this section of salinity versus time in the upper 300 meters at the HOT site (we stretched the section by click-dragging the re-size icon on its lower right):
+
+  .. figure:: figures/fig6b-07.png
+
+    Fig 6b-07 Contour Plot
+
+  .. note::
+    Note that over the years there are fluctuations in salinity in the upper 300 meters at this site, for example a fresher period ca. 1996-1997 and some salty years during 1999-2003. Plus there are fluctuations at shorter time scales, perhaps seasonal and/or interannual.
