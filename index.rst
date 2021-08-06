@@ -71,24 +71,24 @@ Also with
    :caption: Contents:
 
    background/index
-   chapter_1/index
-   chapter_S1/index
-   chapter_2/index
-   chapter_3/index
-   chapter_4/index
-   chapter_5/index
-   chapter_6/index
-   chapter_S6/index
-   chapter_7/index
-   chapter_S7/index
-   chapter_8/index
-   chapter_S8/index
-   chapter_9-14/index
-   chapter_9/index
-   chapter_10/index
-   chapter_11/index
-   chapter_12/index
-   chapter_13/index
-   chapter_14/index
-   chapter_S15/index
+   dpo_joa_examples/chapter_1/index
+   dpo_joa_examples/chapter_S1/index
+   dpo_joa_examples/chapter_2/index
+   dpo_joa_examples/chapter_3/index
+   dpo_joa_examples/chapter_4/index
+   dpo_joa_examples/chapter_5/index
+   dpo_joa_examples/chapter_6/index
+   dpo_joa_examples/chapter_S6/index
+   dpo_joa_examples/chapter_7/index
+   dpo_joa_examples/chapter_S7/index
+   dpo_joa_examples/chapter_8/index
+   dpo_joa_examples/chapter_S8/index
+   dpo_joa_examples/chapter_9-14/index
+   dpo_joa_examples/chapter_9/index
+   dpo_joa_examples/chapter_10/index
+   dpo_joa_examples/chapter_11/index
+   dpo_joa_examples/chapter_12/index
+   dpo_joa_examples/chapter_13/index
+   dpo_joa_examples/chapter_14/index
+   dpo_joa_examples/chapter_S15/index
    glossary
