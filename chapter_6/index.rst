@@ -10,6 +10,8 @@ Data analysis concepts and observational methods
 
   6a
   6b
+  6c
+  6d
 
 .. admonition:: Data files supplied for Chapter 6 exercises
 
