@@ -2,7 +2,7 @@ About the DPO JOA Examples
 --------------------------
 
 These interactive DPO JOA Examples follow the organizational scheme of the textbook "Descriptive Physical Oceanography" (DPO, 6th edition, 2011) (Talley, Pickard, Emery, Swift).
-The electronic ocean atlas application “Java OceanAtlas” (JOA) provides an environment for oceanographic data exploration, including tools for calculation of derived quantities and displays of profiles, vertical sections, and maps.
+The electronic ocean atlas application "Java OceanAtlas" (JOA) provides an environment for oceanographic data exploration, including tools for calculation of derived quantities and displays of profiles, vertical sections, and maps.
 These JOA examples illustrate some of the methods and ocean features and allow the student to gain familiarity with oceanographic data.
 
 .. note::

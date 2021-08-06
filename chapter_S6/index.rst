@@ -10,6 +10,7 @@ Instruments and Methods
 
   s6a
   s6b
+  s6c
 
 
 .. admonition:: Data files supplied for Chapter S6 exercises

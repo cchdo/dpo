@@ -14,8 +14,8 @@ We will begin making a plot for A16S_2005_sta085_bottle.joa data similar to that
 * This will bring up **Basic** page of the **Property-Property Plot** dialog box
 * Select (click on)
 
-  * **CTDS** for the “X-axis parameter”
-  * **TEMP** for the “Y-axis parameter”
+  * **CTDS** for the "X-axis parameter"
+  * **TEMP** for the "Y-axis parameter"
 
 * Select (check the boxes)
 
@@ -81,7 +81,7 @@ Or
   .. note::
     See the black dot on the plot?
 
-    That is the JOA “browsing dot”, which shows the present location of the JOA data browser.
+    That is the JOA "browsing dot", which shows the present location of the JOA data browser.
 
     Look in the JOA Data Window. The station header and data values displayed are the point of the browsing dot. The graphic data display of the layout shows a dot at this location. The small sliding arrow next to the current JOA color bar shows the closest color of the colored parameter. And the browsing dot will also show up on every JOA plot, thereby linking all plots and the data window.
 
@@ -114,9 +114,9 @@ This way you can use the arrow keys to navigate through a data set.
   
   You can see that, for colder water, it takes a greater change in temperature to produce the same change in density than for warmer waters. You could say similarly about salinity that, in colder waters, a given salinity change produces a larger density change than it does in warmer waters.
 
-  * For this reason, density variations in the warm waters of the oceans are sometimes thought of as being “driven by temperature”; whereas, those in the cold waters of the oceans are “driven by salinity”.
+  * For this reason, density variations in the warm waters of the oceans are sometimes thought of as being "driven by temperature"; whereas, those in the cold waters of the oceans are "driven by salinity".
 
-  Because the focus here is on density, note that on the A16S_2005 station 085 bottle data plot you drew, the density-related parameter “sigma” (see the caption to DPO Figure 3.01) increases to higher numbers (to higher potential densities) from the upper layer to at least the level of the mid-deep salinity maximum.
+  Because the focus here is on density, note that on the A16S_2005 station 085 bottle data plot you drew, the density-related parameter "sigma" (see the caption to DPO Figure 3.01) increases to higher numbers (to higher potential densities) from the upper layer to at least the level of the mid-deep salinity maximum.
 
   Below that (at higher pressures than that) it is not clear from the small plot on your monitor that this particular density-related parameter actually does increase as one moves into the deepest, near-bottom layer.
 
@@ -135,7 +135,7 @@ Exercise 3B-03: Seawater Properties - Potential Temperature and Sigma-0
 Before you set up the JOA 4-parameter plot, you need to use JOA's built-in parameter calculator to calculate values of potential temperature (see the DPO text) and sigma-0 (the density parameter) for these data:
 
 * **Calculations → Parameters…**
-* In the resulting **Parameter Calculations** dialog box select (click on the check boxes) the “Theta” (oceanographers' abbreviation for “Potential Temperature”) and “Sigma-0” choices:
+* In the resulting **Parameter Calculations** dialog box select (click on the check boxes) the "Theta" (oceanographers' abbreviation for "Potential Temperature") and "Sigma-0" choices:
 
   .. figure:: figures/fig3b-06.png
 
@@ -150,10 +150,10 @@ Exercise 3B-04: Seawater Properties - Multiple-X-axis JOA Property-Property Plot
 ---------------------------------------------------------------------------------
 * To make the dialog box shown below, first have the A16S_2005 station 085 bottle data file open in JOA
 * **Plots → Property-Property…**
-* Now use the dialog box resizing symbol on the lower right of the dialog box to “pull down” (extend down) the dialog box (click on the symbol and move the mouse pointer down the screen). You will see the scrolling X- and Y-axis parameter lists expand until all the parameters are visible.
-* Now, via right-clicks or ctrl/command-clicks, you will find you can select more than one X-axis parameter. Do this for temperature (“TEMP”), CTD salinity (“CTDS”), potential temperature (“THTA”) and sigma-0 (“SIG0”), with pressure (“PRES”) for the Y-axis.
+* Now use the dialog box resizing symbol on the lower right of the dialog box to "pull down" (extend down) the dialog box (click on the symbol and move the mouse pointer down the screen). You will see the scrolling X- and Y-axis parameter lists expand until all the parameters are visible.
+* Now, via right-clicks or ctrl/command-clicks, you will find you can select more than one X-axis parameter. Do this for temperature ("TEMP"), CTD salinity ("CTDS"), potential temperature ("THTA") and sigma-0 ("SIG0"), with pressure ("PRES") for the Y-axis.
 
-  * Also select **Color symbols by “Connect line color”** and **Connect observations**
+  * Also select **Color symbols by "Connect line color"** and **Connect observations**
   * Select **square dot symbols**, size 6 (making your symbols easier to see on the resulting plot).
 
 * The **Basic** page of the **Property-Property Plot** dialog box should then look like this:
@@ -169,7 +169,7 @@ Exercise 3B-04: Seawater Properties - Multiple-X-axis JOA Property-Property Plot
 
     FIG 3b-08 The Advanced panel of the Property-Property Plot dialog box
 
-* What you can now do is customize the “Minimum” and “Maximum” values, “Increment” and “# of Minor Ticks” (and, if you wish, the “Connect line color”, “Symbol” and symbol “Size”) for each of the X-axis parameters (reached individually by scrolling through the list of X-axis parameters) and the “Minimum” and “Maximum” values, “Increment“, and “# of Minor Ticks” for the Y-axis parameter, which in this case is pressure (“PRES”). Set these up as shown in the table:
+* What you can now do is customize the "Minimum" and "Maximum" values, "Increment" and "# of Minor Ticks" (and, if you wish, the "Connect line color", "Symbol" and symbol "Size") for each of the X-axis parameters (reached individually by scrolling through the list of X-axis parameters) and the "Minimum" and "Maximum" values, "Increment", and "# of Minor Ticks" for the Y-axis parameter, which in this case is pressure ("PRES"). Set these up as shown in the table:
 
   +------+---------+---------+-----------+------------------+
   | Axis | Minimum | Maximum | Increment | # of Minor Ticks |
@@ -194,7 +194,7 @@ Exercise 3B-04: Seawater Properties - Multiple-X-axis JOA Property-Property Plot
   .. admonition:: Examine
     :class: tip
 
-    With this plot you can now visualize the co-variation of temperature, salinity, and a density-related parameter with pressure at this location in the South Atlantic Ocean in 2005. You can also see - via the pair of temperature versus pressure profiles - the effects pressure on measured temperature (“in situ temperature”).
+    With this plot you can now visualize the co-variation of temperature, salinity, and a density-related parameter with pressure at this location in the South Atlantic Ocean in 2005. You can also see - via the pair of temperature versus pressure profiles - the effects pressure on measured temperature ("in situ temperature").
 
     * Compare the measured temperature with the calculated parameter potential temperature, in the deep and bottom waters potential temperature is always colder than in situ temperature.
     * You will also note that the range of each parameter in this 4-parameter Property-Property Plot is significantly larger in the upper layer than it is in the deeper layers below.
@@ -233,7 +233,7 @@ To do this, bring up the **Property-Property Plot** dialog box.
   .. admonition:: Examine
     :class: tip
 
-    When pressure effects on temperature are removed (remember, this takes place via the calculation of potential temperature “theta”), the temperature of the deepest sample is not warmer than that of the sample immediately above.
+    When pressure effects on temperature are removed (remember, this takes place via the calculation of potential temperature "theta"), the temperature of the deepest sample is not warmer than that of the sample immediately above.
 
 * Use the JOA **Parameters** calculator (under the JOA **Calculations** menu) to calculate other physical parameters described in DPO Chapter 3:
 

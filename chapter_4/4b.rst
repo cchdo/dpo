@@ -33,7 +33,7 @@ The DPO maps of surface temperature, salinity, and surface density in winter, an
 
   * Collects and quality-controls profile data from a chosen region (for example one ocean basin or the World Ocean)
   * Sometimes sorts them by time (by month and/or year, for example)
-  * Interpolates them onto chosen “standard levels” (for example chosen depths, pressures, or density surfaces)
+  * Interpolates them onto chosen "standard levels" (for example chosen depths, pressures, or density surfaces)
   * At each level, averages data falling within bounds of some sort of chosen grid spacing
 
   An outstanding example is the one-degree square averages onto standard depth surfaces prepared by Syd Levitus and co-workers at the US National Oceanographic Data Center in their World Ocean Atlas (WOA) compilations. Many 1-degree squares are under-represented in terms of data in WOA, but on a global scale these do not overly bias the results.
@@ -45,7 +45,7 @@ The DPO maps of surface temperature, salinity, and surface density in winter, an
   Although Java OceanAtlas works from pressure-indexed data, for convenience, we have read the depths as if they were pressures. The numerical error (the numerical difference between depths in meters and pressures in decibars) in the upper layers is insignificant; considering the averaging and interpolation going into WOA09, it does not affect interpretation of seawater property distributions significantly at great depth.
 
   .. note::
-    Please keep in mind, however, that when using WOA09 data files in JOA, the “pressure” data are actually values of “depth” in the original file from NODC.]
+    Please keep in mind, however, that when using WOA09 data files in JOA, the "pressure" data are actually values of "depth" in the original file from NODC.]
 
   It is a challenge to use the full, global WOA09 data set in Java OceanAtlas, at least with the power and memory of a typical laptop computer and the inefficiencies of the Java environment.
 
@@ -67,12 +67,12 @@ The DPO maps of surface temperature, salinity, and surface density in winter, an
 
   Considering that meridians (lines of longitude) draw closer together poleward, this more or less maintains the distance spacing of the grid points and reduces the file size somewhat.
 
-  To make a WOA09 “reduced” data set, we started with the 2009 version of WOA and eliminated every second degree of data starting at the equator then followed through, eliminating additional grid points poleward in accord with the rules above.
+  To make a WOA09 "reduced" data set, we started with the 2009 version of WOA and eliminated every second degree of data starting at the equator then followed through, eliminating additional grid points poleward in accord with the rules above.
 
 .. warning::
   data file may slow your computer!
 
-  The data file used for these “surface properties” examples is large relative to the relatively slow speed and relatively large memory usage of the Java environment.
+  The data file used for these "surface properties" examples is large relative to the relatively slow speed and relatively large memory usage of the Java environment.
 
 Files that may be needed or created in this example:
 
@@ -136,7 +136,7 @@ Exercise 4B-02: Surface Properties - Making a Lambert Azimuthal Equal Area Map P
     FIG 4b-05 Lambert Azimuthal Equal Area map plot
 
   .. note::
-    There are many profiles (“stations” in JOA terminology), on a grid-like pattern covering the World Ocean.
+    There are many profiles ("stations" in JOA terminology), on a grid-like pattern covering the World Ocean.
 
 * **Plots → Map…**
 * Set up a second **Lambert Azimuthal Equal** Area map plot with these settings (again noting that a **Preset Region** must be selected, even if it does not match the **Custom Region** boundaries):

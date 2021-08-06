@@ -36,7 +36,7 @@ Exercise 7B-01: Making a Dynamic Topography Map
 
     Fig 7b-03 General Settings tab of Configure Map Plot dialog box
 
-* Use the **Bathymetry** tab of the **Configure Map Plot** dialog box to select the etopo20.nc bathymetry file and use the Colorbar “ROSE-black_cbr.xml” (like with other map plots where the stations are in a grid covering the map)
+* Use the **Bathymetry** tab of the **Configure Map Plot** dialog box to select the etopo20.nc bathymetry file and use the Colorbar "ROSE-black_cbr.xml" (like with other map plots where the stations are in a grid covering the map)
 * Select the **Iso-surface value** sub-panel of the **Station Colors** tab to make an **Iso-surface value** plot of **GPOT** referenced to 1000 decibars:
 
   * Choose **GPOT** under **Parameter**:

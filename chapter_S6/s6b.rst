@@ -87,8 +87,8 @@ Use JOA's select-redraw feature to examine sub-areas of each of these plots. Thi
 
   Consider why these three profiles do not completely overlap.
 
-  * Small disagreements between the WOA05 profile and the A16_2005 profile certainly can arise due to the averaging-in of other data when the WOA was created. (Plus, the WOA05 grid point is about 50 km from the A16 station location.) But the CTD data and bottle data profiles are from the same station on the 2005 “A16” cruise from the NOAA research vessel Ron Brown.
-  * Differences between temperature between the A16 bottle data and CTD data can arise because the CTD data are from the “down” cast and the bottle data are from the “up” cast - this is partly die to the effects of internal waves in the ocean, plus drift of the ship, plus lateral motions of various layers of the water column.
+  * Small disagreements between the WOA05 profile and the A16_2005 profile certainly can arise due to the averaging-in of other data when the WOA was created. (Plus, the WOA05 grid point is about 50 km from the A16 station location.) But the CTD data and bottle data profiles are from the same station on the 2005 "A16" cruise from the NOAA research vessel Ron Brown.
+  * Differences between temperature between the A16 bottle data and CTD data can arise because the CTD data are from the "down" cast and the bottle data are from the "up" cast - this is partly die to the effects of internal waves in the ocean, plus drift of the ship, plus lateral motions of various layers of the water column.
   * The salinity and oxygen values in the bottle data file are from water samples, whereas the values in the CTD data file are from electronic sensors. The electronic sensor data are corrected/calibrated against the bottle data, but perfect fits are not reasonable.
 
 Exercise S6B-03: Comparing Data - Potential Temperature Versus Salinity in CTD Data
@@ -121,20 +121,20 @@ It is useful to examine a potential temperature versus salinity plot for the CTD
 
   Warm salty surface waters overlie a cool, fresher layer (with a salinity minimum), in turn overlying a layer of similar temperature which is saltier (with a salinity maximum), and finally the deepest layer is colder and a little fresher.
   
-  Each of these distinctive joint characteristics making up a layer of water is the signature of what oceanographers call a “water mass”.
+  Each of these distinctive joint characteristics making up a layer of water is the signature of what oceanographers call a "water mass".
   
   This plot provides information about this layering of water masses:
   
   Recall that the CTD data file contains one data value for each decibar of pressure, and that JOA is plotting each data point. Therefore each tight clustering of data points on the plot indicates a portion of the profile where temperature and/or salinity are more nearly uniform with pressure, whereas a spreading of data points on the plot will indicate where vertical gradients in one or both are higher.
 
-* Explore this on the plot by repeatedly click-drag-select portions of the plot to the point where you can see individual “1-meter-of-water” dots.
+* Explore this on the plot by repeatedly click-drag-select portions of the plot to the point where you can see individual "1-meter-of-water" dots.
 
 .. admonition:: Examine
   :class: tip
 
-  The dots do cluster and spread. Even on a smaller scale there is some indication that the vertical gradients are not smooth, that there are many “layers”.
+  The dots do cluster and spread. Even on a smaller scale there is some indication that the vertical gradients are not smooth, that there are many "layers".
 
-  You may also find portions of the water column where there are small “zig-zags” - colder fresher layers interleaved with warmer saltier layers. This shows that CTD data, as compared to bottle data, may show an abundance of small-scale features in the water column (known as “fine structure”), features that are completely missed by the much coarser-resolution bottle or multi-year averaged data.
+  You may also find portions of the water column where there are small "zig-zags" - colder fresher layers interleaved with warmer saltier layers. This shows that CTD data, as compared to bottle data, may show an abundance of small-scale features in the water column (known as "fine structure"), features that are completely missed by the much coarser-resolution bottle or multi-year averaged data.
 
 Here are some examples of enlargements made from this plot:
 

@@ -77,4 +77,4 @@ Exercise 2B-03: Ocean Maps - Map units and Dimensions
 * What is the distance, in meters, represented by one tenth of a minute of latitude, by one hundredth of a minute?
 * By one tenth, one hundredth, one thousandth, and one ten thousandth of a degree of latitude?
 * What is the distance, in meters, represented by one tenth and one hundredth of a degree of longitude at the equator, and at 30, 45, 60, and 75 degrees latitude?
-* To know the position to “within one ship length”, for an 85-meter ship to what precision in decimal degrees, and in degrees and minutes, must one express position (latitude and longitude) at 45 degrees latitude?
+* To know the position to "within one ship length", for an 85-meter ship to what precision in decimal degrees, and in degrees and minutes, must one express position (latitude and longitude) at 45 degrees latitude?

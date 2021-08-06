@@ -14,7 +14,7 @@ Example 3A: Before we get started
 
   Many seawater characteristics cannot be sampled, or sampled at high enough quality, by electronic sensors.
 
-  Bottle data originate from water sample bottles attached to a lowered wire or group-mounted on a frame (called a “rosette” water sampler) attached to a lowered wire, which are closed at chosen levels, isolating water samples then subsampled shipboard for various parameters such as salinity, dissolved oxygen (or other dissolved gasses), dissolved inorganic nutrients, or many other substances.
+  Bottle data originate from water sample bottles attached to a lowered wire or group-mounted on a frame (called a "rosette" water sampler) attached to a lowered wire, which are closed at chosen levels, isolating water samples then subsampled shipboard for various parameters such as salinity, dissolved oxygen (or other dissolved gasses), dissolved inorganic nutrients, or many other substances.
 
   From one water bottle brought up from the deep, subsamples can be drawn for many different seawater characteristics.
 
@@ -52,9 +52,9 @@ Example 3A: Before we get started
 
   A subset of these transects was subsequently chosen by oceanographers to be re-occupied (re-measured) approximately decadally (some more often, some less often).
 
-  One of these transects we will use in the DPO JOA Examples is the “A16” meridional (south-to-north; as opposed to zonal, or west-to-east) Atlantic Ocean transect from the Southern Ocean, near the South Shetland Islands, north to Iceland. This original WOCE transect was re-occupied during two cruises: the northern part in 2003 and the southern part in 2005, as part of the US Global Ocean Carbon and Repeat Hydrography program.
+  One of these transects we will use in the DPO JOA Examples is the "A16" meridional (south-to-north; as opposed to zonal, or west-to-east) Atlantic Ocean transect from the Southern Ocean, near the South Shetland Islands, north to Iceland. This original WOCE transect was re-occupied during two cruises: the northern part in 2003 and the southern part in 2005, as part of the US Global Ocean Carbon and Repeat Hydrography program.
 
-  In this chapter we will use bottle data from one station from the 2005 South Atlantic Ocean “A16S” cruise to investigate the properties of seawater and their vertical variation at the location of this station.
+  In this chapter we will use bottle data from one station from the 2005 South Atlantic Ocean "A16S" cruise to investigate the properties of seawater and their vertical variation at the location of this station.
 
 
 Files that may be needed or created in this example:
@@ -80,7 +80,7 @@ Here is a summary of the various parameters in this data file (all parameters no
   * - PRES
     - CTD pressure at the time the bottle was closed
   * - TEMP
-    - CTD temperature (“in situ”) at the time the bottle was closed
+    - CTD temperature ("in situ") at the time the bottle was closed
   * - CTDS
     - CTD salinity at the time the bottle was closed
   * - SALT
@@ -94,9 +94,9 @@ Here is a summary of the various parameters in this data file (all parameters no
   * - PO4
     - phosphate
   * - F11
-    - CFC-11 (“Freon 11”)
+    - CFC-11 ("Freon 11")
   * - F12
-    - CFC-12 (“Freon 12”)
+    - CFC-12 ("Freon 12")
   * - F113
     - CFC-113
   * - CCL4

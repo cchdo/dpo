@@ -11,7 +11,7 @@ For example, when you set up a map plot in JOA with the **Configure Map Plot** d
 It is also easy to set up a new map or revise an existing one via the 'Custom Region' choices.
 
 .. note::
-  Remember that JOA uses negative latitudes for “south” latitudes and negative longitudes for “west” longitudes.
+  Remember that JOA uses negative latitudes for "south" latitudes and negative longitudes for "west" longitudes.
 
 We supply below some suggestions for Custom Region entries for whole-basin map plots. The maps will include principal marginal seas as well as the main basins. The table lists the source, region, and names of the data files, along with suggested **B**\ ottom, **T**\ op, **L**\ eft, and **R**\ ight JOA 'custom region' map boundaries for each.
 
@@ -46,11 +46,11 @@ We supply below some suggestions for Custom Region entries for whole-basin map p
 +----------------+-----------------------+---------------------------------+---------------------------------------+----------+----------+-----------+----------+
 
 .. note::
-  For the Arctic and Southern region map plots, use the appropriate polar map projections, i.e. “North Pole” or “South Pole”. “Arctic-1” includes waters of the Bering Sea, and “Arctic-2” covers the Arctic Ocean and some of the Nordic Seas.
+  For the Arctic and Southern region map plots, use the appropriate polar map projections, i.e. "North Pole" or "South Pole". "Arctic-1" includes waters of the Bering Sea, and "Arctic-2" covers the Arctic Ocean and some of the Nordic Seas.
 
   For the World Ocean map plots, in the 2008 version of JOA one is restricted to use either the Mercator or Miller projections only
 
-  The custom region map boundaries which cover the largest areas (e.g., all-Pacific and all-Atlantic) work better with some Map Projections than others. The “Mollweide” projection in particular often works well.
+  The custom region map boundaries which cover the largest areas (e.g., all-Pacific and all-Atlantic) work better with some Map Projections than others. The "Mollweide" projection in particular often works well.
 
 .. hint::
   In Java OceanAtlas, you can 'open' one data file and then 'add' another to it, in order to make data files that combine or bridge these data sets.

@@ -12,7 +12,7 @@ Files that may be needed or created in this example:
 Exercise 2A-01: First Things First - Start JOA and Set JOA Preferences
 ----------------------------------------------------------------------
 
-Java OceanAtlas (JOA) is configured to have a specified appearance and a specified result for various actions (such as how it translates data files when it opens them), and some JOA features can be enabled/disabled. This configuration is handled via the JOA “Preferences” dialog box. We pre-configured JOA to fit the needs of DPO JOA Examples users. But if you are not dealing with a new/fresh copy of JOA, some previous user may have altered the pre-set Preferences. Here we will show the Preferences panels in our recommended configuration for the DPO JOA Examples, and briefly discuss some of the options should you later choose to change the Preferences.
+Java OceanAtlas (JOA) is configured to have a specified appearance and a specified result for various actions (such as how it translates data files when it opens them), and some JOA features can be enabled/disabled. This configuration is handled via the JOA "Preferences" dialog box. We pre-configured JOA to fit the needs of DPO JOA Examples users. But if you are not dealing with a new/fresh copy of JOA, some previous user may have altered the pre-set Preferences. Here we will show the Preferences panels in our recommended configuration for the DPO JOA Examples, and briefly discuss some of the options should you later choose to change the Preferences.
 
 * Start JOA by double clicking on the JOA icon, or by whatever other means you start an application on your computer
   

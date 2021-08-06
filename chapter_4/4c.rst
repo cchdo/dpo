@@ -68,11 +68,11 @@ Here, however, the WOA versions of the WOCE transects handily provide a generall
 
   In standard oceanographic terminology, vertical sections are vertically-oriented slices through the ocean.
 
-  A “meridional” vertical section is aligned south-to-north (or north-to-south) along a meridian, or longitude line. A meridional vertical section need not, however, exactly follow a line of constant longitude - this is a concept rather than a rule.
+  A "meridional" vertical section is aligned south-to-north (or north-to-south) along a meridian, or longitude line. A meridional vertical section need not, however, exactly follow a line of constant longitude - this is a concept rather than a rule.
   
   In the broadest, most general terms, meridional sections are often useful to illustrate the variations in seawater characteristic between climate zones (e.g., the equator - tropics - sub-tropics - subpolar - polar zones).
   
-  A “zonal” vertical section is aligned west-to-east (or east-to-west) along a latitude line. Again, this is a concept, so a zonal vertical section need not exactly follow a line of constant latitude. Zonal sections help illustrate where, in the oceans, exchanges between climate zones take place - some can be used to calculate fluxes and transports between climate zones.
+  A "zonal" vertical section is aligned west-to-east (or east-to-west) along a latitude line. Again, this is a concept, so a zonal vertical section need not exactly follow a line of constant latitude. Zonal sections help illustrate where, in the oceans, exchanges between climate zones take place - some can be used to calculate fluxes and transports between climate zones.
   
   We have organized the vertical section data files, included with the DPO JOA Examples, to begin with south (or west) profiles on the left hand side of section plots proceeding to north (or east) on the right.
   
@@ -206,9 +206,9 @@ We suggest that users of the DPO JOA Examples now become familiar with JOA Conto
 
     * Far-field or horizontal interpolation: If a bounding observation in the current cast is missing, this option directs JOA to use up to n surrounding casts (before and after) to interpolate a value for the missing value.
 
-      It does this by first calculating the horizontal gradient of the contour parameter near the depth of the missing observation and secondly using the gradient to create “virtual” observations of the contour parameter at the current profile.
+      It does this by first calculating the horizontal gradient of the contour parameter near the depth of the missing observation and secondly using the gradient to create "virtual" observations of the contour parameter at the current profile.
 
-      The closest “virtual” observation to the missing value is then used to interpolate the contour parameter to the surface level. A Maximum distance option is provided so that in cases of uneven station distribution along a track, Java OceanAtlas can be restricted from looking unrealistically far away for data to complete an interpolation.
+      The closest "virtual" observation to the missing value is then used to interpolate the contour parameter to the surface level. A Maximum distance option is provided so that in cases of uneven station distribution along a track, Java OceanAtlas can be restricted from looking unrealistically far away for data to complete an interpolation.
 
     **Maximum number of observations**: This option is provided to limit the number of observations away the interpolator will look for a non-missing value. This option is most useful for bottle profiles where the vertical spacing of bottles increases with depth.
 
@@ -303,7 +303,7 @@ The WOA09 averaged profiles from these were chosen to follow the tracks of the W
 If you have sufficient display area for your computer, you can open each of the data files at once in JOA (using JOA's **Open…** command under JOA's **File** menu three separate times), resulting in three JOA Data Windows, i.e., one for each data file.
 
 .. note::
-  To plot from a specific data set when you have multiple Data Windows open, you must have either its Data Window or any plot window made from that data set as the current (“top most”) window on your computer.
+  To plot from a specific data set when you have multiple Data Windows open, you must have either its Data Window or any plot window made from that data set as the current ("top most") window on your computer.
 
   The JOA Windows menu shows every open JOA window in an easy-to-understand format. Using the Windows menu can help reduce confusion when multiple data files are open in JOA, each with its own plots.
 

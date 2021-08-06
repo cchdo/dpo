@@ -11,7 +11,7 @@ In the exercises related to DPO Chapters S6, we will explore the difference in d
 
   Although it is tempting to think that CTD electronic profiling instruments produce a continuous data stream, in fact, the data stream from the sensors is broken up into data packets.
 
-  The native resolution of the CTD instrument most commonly used in “blue water” oceanography in 2007 was 24 Hz, meaning, more or less, that a packet of data containing one measurement from each primary sensor (pressure, temperature, and conductivity) is sent to the computer 24 times each second.
+  The native resolution of the CTD instrument most commonly used in "blue water" oceanography in 2007 was 24 Hz, meaning, more or less, that a packet of data containing one measurement from each primary sensor (pressure, temperature, and conductivity) is sent to the computer 24 times each second.
 
   The typical deployment (and haul) speed for a CTD is about 60 meters of wire out (or in) per minute, and a typical ocean depth is 4000 meters, meaning that the data file for a typical down and up CTD profile contains more than 170,000 raw data packets.
   

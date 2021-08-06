@@ -44,7 +44,7 @@ Exercise 3C-01: Seawater Properties - Compressibility
   * Double-click or control-click on a map plot
   * Or type [ctrl/cmd]-R or **Edit → Edit: plotname** when a map plot is the front-most window.
 
-* Now, experiment with the isopycnal “slider” on the bottom of the Advanced page:
+* Now, experiment with the isopycnal "slider" on the bottom of the Advanced page:
 
   .. figure:: figures/fig3c-03.png
 
