@@ -26,7 +26,6 @@ Exercise 2E-01: Ocean Maps - Plot Your City's Location
 Here we show you how to make your own JOA data file, similar to SIO.joa, yet in this case a data file with the location of your choice city.
 
 * Look up the latitude and longitude of a city either with a global map or online resource.
-  See :ref:`Resources` for helpful links.
   For example, see http://go.hrw.com/atlas/norm_htm/oceans.htm
 * Convert the latitude and longitude to decimal degrees, using the JOA sign conventions.
   For example, the latitude 13° 43.7' S will be written as -13.72 in decimal degrees with this convention.
