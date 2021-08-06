@@ -11,6 +11,7 @@ Typical distributions of water characteristics
   4a
   4b
   4c
+  4d
 
 
 .. admonition:: Data files supplied for Chapter 4 exercises

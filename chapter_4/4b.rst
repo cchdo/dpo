@@ -112,6 +112,8 @@ The two global JOA map projections - **Mercator** and **Miller Cylindrical** - a
 But JOA can have as many map plots open simultaneously as computer resources permit, so here we provide instructions to make two map plots, which together cover most of the World Ocean.
 
 
+.. _4b-02:
+
 Exercise 4B-02: Surface Properties - Making a Lambert Azimuthal Equal Area Map Plot
 -----------------------------------------------------------------------------------
 * **Plots → Map…**

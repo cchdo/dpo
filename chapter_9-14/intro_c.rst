@@ -15,7 +15,7 @@ Exercise IntroC-01: Map Plots - How-to: Extracting Data Subsets
 * Start JOA
 * **File → Open** → WOA05_atlantic.jos
 * Click **OK** in the import dialog box
-* Make a Lambert **Azimuthal Equal Area** Map Plot (refer to Exercise :ref:`4B-02`) with the following choices in the **iso-surface value** box in the **Station Colors** window of the **Configure Map Plot** dialog box:
+* Make a Lambert **Azimuthal Equal Area** Map Plot (refer to :ref:`4B-02`) with the following choices in the **iso-surface value** box in the **Station Colors** window of the **Configure Map Plot** dialog box:
 
   * *O2* selected for **Parameter**
   * O2\__-global_cbr.xml colorbar
