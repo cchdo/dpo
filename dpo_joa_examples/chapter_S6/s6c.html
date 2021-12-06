@@ -1,0 +1,443 @@
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="Chapter Seven" href="../chapter_7/index.html" /><link rel="prev" title="Example S6B: A Vertical Profile Visualized from CTD, Bottle, and Multi-year Averaged Data" href="s6b.html" />
+
+    <meta name="generator" content="sphinx-4.3.1, furo 2021.11.23"/>
+        <title>Example S6C: A Vertical Section Visualized from CTD, Bottle, and Multi-year Averaged Data - Descriptive Physical Oceanography JOA Examples</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?digest=7f0192ddeb2adecfbaa87ffbcf67d16358b30bc1" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?digest=0af69da206d614734f649b27d4cdc2dd6c31f41d" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  body[data-theme="dark"] {
+    --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+  }
+  @media (prefers-color-scheme: dark) {
+    body:not([data-theme="light"]) {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+  }
+</style></head>
+  <body>
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" />
+      <line x1="4" y1="6" x2="20" y2="6" />
+      <line x1="10" y1="12" x2="20" y2="12" />
+      <line x1="6" y1="18" x2="20" y2="18" />
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../index.html"><div class="brand">Descriptive Physical Oceanography JOA Examples</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
+  
+  
+  <span class="sidebar-brand-text">Descriptive Physical Oceanography JOA Examples</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../background/index.html">Background</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../background/about.html">About the DPO JOA Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../background/intro.html">Introduction and Brief History of Java OceanAtlas</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_1/index.html">Chapter One</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_S1/index.html">Chapter One Supplement</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter_2/index.html">Chapter Two</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_2/2a.html">Example 2A: Dimensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_2/2b.html">Example 2B: Sea-floor Dimensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_2/2c.html">Example 2C: Bathymetry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_2/2d.html">Example 2D: DPO Extra Topic; Map Projections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_2/2e.html">Example 2E: DPO Extra Topic; Making a .joa file</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter_3/index.html">Chapter Three</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_3/3a.html">Example 3A: Before we get started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_3/3b.html">Example 3B: Physical Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_3/3c.html">Example 3C: Effect of Temperature and Salinity on Compressibility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_3/3d.html">Example 3D: Static Stability and Brunt-Väisälä Frequency</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_3/3e.html">Example 3E: Sound in the Sea</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter_4/index.html">Chapter Four</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_4/4a.html">Example 4A: Before we get started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_4/4b.html">Example 4B: Surface properties of world ocean waters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_4/4c.html">Example 4C: Vertical Distribution of Water Properties Along South-to-North Transects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_4/4d.html">Example 4D: Vertical Distribution of Water Properties Along South-to-North Transects</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_5/index.html">Chapter Five</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter_6/index.html">Chapter Six</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_6/6a.html">Example 6A: Sections with Vertical Axes other than Pressure (or Depth)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_6/6b.html">Example 6B: Sections with horizontal axis other than distance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_6/6c.html">Example 6C: Exploiting some of JOA’s Mapping Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_6/6d.html">Example 6D: Maps of Properties on Density and Other Surfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_6/6e.html">Example 6E: Maps of Properties on Extrema</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_6/6f.html">Example 6F: Plotting Map of Average of Properties Between Two Surfaces</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">Chapter Six Supplement</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="s6a.html">Example S6A: Before We Get Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="s6b.html">Example S6B: A Vertical Profile Visualized from CTD, Bottle, and Multi-year Averaged Data</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Example S6C: A Vertical Section Visualized from CTD, Bottle, and Multi-year Averaged Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter_7/index.html">Chapter Seven</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_7/7a.html">Example 7A: Before we get started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_7/7b.html">Example 7B: Dynamic Topography Maps</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_S7/index.html">Chapter Seven Supplement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_8/index.html">Chapter Eight</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_S8/index.html">Chapter Eight Supplement</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter_9-14/index.html">Chapters Nine through Fourteen</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_9-14/intro_a.html">Example 9-14A: Before we get started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_9-14/intro_b.html">Example 9-14B: Introduction to JOA Maps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_9-14/intro_c.html">Example 9-14C: Extracting Data Subsets from Map Plots &amp; Advanced JOA Tools for Working with Basin-Scale Data Sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_9-14/intro_d.html">Example 9-14D: Using Data Subsets &amp; Advanced JOA Tools</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_9/index.html">Chapter Nine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_10/index.html">Chapter Ten</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_11/index.html">Chapter Eleven</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_12/index.html">Chapter Twelve</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_13/index.html">Chapter Thirteen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_14/index.html">Chapter Fourteen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_S15/index.html">Chapter Fifteen Supplement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary.html">JOA Glossary</a></li>
+</ul>
+
+</div>
+</div>
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section id="example-s6c-a-vertical-section-visualized-from-ctd-bottle-and-multi-year-averaged-data">
+<h1>Example S6C: A Vertical Section Visualized from CTD, Bottle, and Multi-year Averaged Data<a class="headerlink" href="#example-s6c-a-vertical-section-visualized-from-ctd-bottle-and-multi-year-averaged-data" title="Permalink to this headline">¶</a></h1>
+<p>It is worthwhile to compare a vertical section made from three different data types:</p>
+<ul class="simple">
+<li><p>Bottle data</p></li>
+<li><p>Decimated CTD data</p></li>
+<li><p>Multi-year averaged data</p></li>
+</ul>
+<p>The bottle and CTD data come from the 2003 and 2005 “A16” expeditions for the US Global Ocean Carbon and Repeat Hydrography program, so match up station to station.</p>
+<p>The multi-year averaged data come from the World Ocean Atlas 2005 (WOA05) annual average data, which are available at 1-degree intervals of latitude and longitude over the World Ocean - we picked off the data points that are closest to the A16 track.</p>
+<p>Files that may be needed or created in this example:</p>
+<ul class="simple">
+<li><p>A16_2003_2005_bottle_clean.joa</p></li>
+<li><p>A16_2003_2005_ctd_decimated.joa</p></li>
+<li><p>WOA05_A16.joa</p></li>
+<li><p>A16_2003_2005_CTD_undecimated.joa</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We have changed the parameter names in the CTD data file from CTDS to SALT and from CTDO to O2 to make it easier for you to use the same contour/color bars for plots from all three data sets</p>
+</div>
+<div class="seealso admonition">
+<p class="admonition-title">Learn More</p>
+<p>Decimated CTD data</p>
+<p>A long section of stations, such as the meridional “A16” Antarctic-to-Iceland section, may contain more than 100 profiles (161 in the case of A16). There are typically ca. 24-36 water samples (from water sample bottles) collected during each profile, totaling approximately 5000 water samples.</p>
+<p>Although the Java environment is not an efficient one from the standpoint of use of computer resources, that 5000-sample data volume, typical of a long bottle data section, is not a challenge for most computers using JOA. But the original processed A16 CTD data were reported to the data center at 1 decibar intervals, or about 5000 records per profile, totaling about 800,000 CTD data values for each parameter. That does slow down JOA on the computers available at the time the DPO JOA Examples were written. This alone provides one rationale for using a well-chosen subset of the CTD data for JOA plotting.</p>
+<p>Regarding plotting full-resolution CTD data using JOA there are other considerations. For example, on JOA property-property and profile plots (see the JOA Plots menu), the application does show every data value. Therefore on those two plot types, the full resolution of the data can be visualized.</p>
+<p>But on JOA contour plots (oceanographers call these vertical section plots), the JOA application grids the data values onto a pre-selected set of surfaces, most often onto a set of pressure surfaces.</p>
+<p>At this writing, JOA has an internal hard limit of 128 surfaces per set. Therefore, for example, over the full pressure range of the PRES-0-6000_srf.xml interpolation surface, a maximum of only 128 surfaces could be specified (actually, the number is 64 for that particular interpolation surface), so fine-structure details in the data, which fall between interpolation levels, cannot be shown on a JOA contour (section) plot.</p>
+<p>JOA provides via its Preferences window (accessed under the Java OceanAtlas menu), the means for a user to specify if and how CTD data are to be decimated when originally imported into JOA, for example, from the original “WHP Exchange” CTD data format (see <a class="reference external" href="https://cchdo.ucsd.edu">https://cchdo.ucsd.edu</a>).</p>
+<p>For many uses, it is wise when importing CTD data to use one of the decimation choices. We did this when we prepared the A16S_2003_2005_ctd_decimated.joa data file using a Custom decimation table created by DPO JOA Examples author Swift.</p>
+<p>But if one wishes to explore the full resolution of a CTD data set when importing data, the <strong>No decimation</strong> choice should be selected. We did that when we prepared the A16_2003_2005_ctd_undecimated.joa data file (which is nearly 18-times larger than the decimated version of the same data).</p>
+<p>We note that for some calculations and visualizations, it can be crucial to think through the issue of CTD data decimation. The data set should be imported at a vertical resolution appropriate to the intended interpretation. For example, if you wish to calculate vertical gradients (this is possible via JOA’s <strong>Custom Parameter…</strong> dialog box under the <strong>Calculations</strong> menu), you probably want CTD data at equal intervals of pressure, and at an interval size appropriate to your intent.</p>
+</div>
+<section id="exercise-s16c-01-comparing-data-multiple-data-types-ctd-bottle-and-multi-year-averaged-data">
+<h2>Exercise S16C-01: Comparing Data - Multiple Data Types (CTD, Bottle, and Multi-year Averaged Data)<a class="headerlink" href="#exercise-s16c-01-comparing-data-multiple-data-types-ctd-bottle-and-multi-year-averaged-data" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><strong>File → Open…</strong> → A16S_2003_2005_bottle_clean.joa</p></li>
+<li><p><strong>File → Open…</strong> → A16S_2003_2005_ctd_decimated.joa (Do not <strong>Add</strong>)</p></li>
+<li><p><strong>File → Open…</strong> → WOA05_A16.joa (Do not <strong>Add</strong>)</p></li>
+</ul>
+<p>To calculate potential temperature (“theta”), sigma-0, and sigma-4 for each data file:</p>
+<ul class="simple">
+<li><p><strong>Calculations → Parameters…</strong></p></li>
+<li><p>Select (<strong>theta</strong>), sigma-0, and sigma-4</p></li>
+</ul>
+<p>The parameters in common to all three data files are now pressure, temperature, salinity, dissolved oxygen, potential temperature, sigma-0, and sigma-4.</p>
+<p>Make contoured vertical sections from each of the three A16-related data files of:</p>
+<ul class="simple">
+<li><p>Potential temperature</p></li>
+<li><p>Salinity</p></li>
+<li><p>Sigma-0</p></li>
+<li><p>Sigma-4</p></li>
+<li><p>oxygen</p></li>
+</ul>
+<p>Compare:</p>
+<ul class="simple">
+<li><p>The appearance of the south-to-north and vertical distributions of these parameters when represented by time-averaged bottle-like data, single-expedition bottle data, and single-expedition CTD data.</p></li>
+<li><p>The time-averaged versus single-expedition silicate, nitrate, and phosphate data.</p></li>
+</ul>
+<p>We show the three potential temperature sections below.</p>
+<figure class="align-default" id="id1">
+<img alt="../../_images/figs16c-01.png" src="../../_images/figs16c-01.png"/>
+<figcaption>
+<p><span class="caption-text">FIG s6c-01 Three potential temperature sections</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<div class="tip admonition">
+<p class="admonition-title">Examine</p>
+<p>The sections with an eye to how the different data types represent the distributions of seawater properties.</p>
+<p>The “big picture” is clearly the same in all three data files, but there are clear differences between the visualizations provided by the A16 bottle, A16 CTD, and WOA05 data files.</p>
+<p>But remember, due to the method that JOA uses to plot a contoured vertical section, you cannot see details of smaller vertical extent than allowed by the choice of JOA interpolation surface, so the visual difference between the A16 bottle and CTD vertical sections does not reflect the full difference in resolution of the data files.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>On a JOA vertical section (“contour”) plot you can select a subset of the plot by click-drag-releasing the mouse.</p>
+<p>The subset of a Contour plot section is a magnification of the same features in the full-range section.</p>
+</div>
+</section>
+<section id="exercise-6sc-02-high-resolution-contoured-ctd-sections">
+<h2>Exercise 6SC-02: High-Resolution Contoured CTD Sections<a class="headerlink" href="#exercise-6sc-02-high-resolution-contoured-ctd-sections" title="Permalink to this headline">¶</a></h2>
+<p>CTD data almost always have significantly greater vertical resolution than do any existing JOA interpolation surfaces, and so you cannot easily visualize the full vertical resolution of CTD data on a JOA Contour (vertical section) plot.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Here we will demonstrate how you can use a custom interpolation surface with levels onto which the data can be interpolated that match or more closely match the vertical resolution of the CTD data. At this writing JOA has a built-in limit of 128 levels per interpolation surface. Therefore, for example, if you wish to plot a contoured section of CTD data with 2-decibar vertical resolution, you will be restricted to a 254-decibar range of pressure, for example you could make a custom interpolation surface to look at the range 960-1214 decibars.</p>
+<p>You can learn more about making custom interpolation surfaces in the JOA User Guide, or simply go to “Surface Manager” under the JOA Resources menu and give it a try.</p>
+</div>
+<p>As an example, we have supplied a custom interpolation surface with 128 levels covering 0-254 decibars at even 2-decibar intervals, which you can use with undecimated CTD data to examine fine structure in the upper layer.</p>
+<p>We supply an undecimated CTD data file (A16_2003_2005_clean_CTD_undecimated.joa) for those who wish to take a close look at CTD data near or at the vertical resolution the data were reported to the data center:</p>
+<ul>
+<li><p><strong>File → Open…</strong> →A16_2003_2005_CTD_undecimated.joa</p></li>
+<li><p>Prepare a contoured/colored vertical section, choosing the “PRES-0-254_srf.xml” interpolation surface, along with whichever parameter to plot - and corresponding color bar - you wish.</p>
+<p>See note below for instructions on easy methods to make temporary custom color/contour bars for JOA Contour vertical section plots.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Drawing the plot may seriously slow some computers, due to the combination of data file size and computation intensity.</p>
+<p>You may note that the resulting contoured section plot is not all that different in appearance from that of the same pressure range.</p>
+</div>
+</li>
+<li><p>Making a temporary custom color bar for a JOA Contour Plot (vertical section plot) is deliberately made as simple as we could manage, in order that users could most easily explore a data set:</p>
+<ul>
+<li><p>Double-clicking on any JOA color bar - one in a dialog box, on any plot, in the Data Window, etc. - will bring up the JOA <strong>Colorbar Editor</strong> dialog box, from which you can set new ranges and/or a new “shape” (interval distribution scheme) for the color bar.</p>
+<figure class="align-default" id="id2">
+<img alt="../../_images/figs16c-02.png" src="../../_images/figs16c-02.png"/>
+<figcaption>
+<p><span class="caption-text">FIG s6c-02 The Colorbar Editor dialog box</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>Experimenting with the various “shapes” will help you decide if you want an alternative to the often-best-choice linear shape.</p></li>
+<li><p>The dark gray histogram in the graph-like area of the <strong>Colorbar Editor</strong> dialog box is meant to act as a guide to the relative frequency of occurrence of data inside the overall data range in the Y-axis of the graphic.</p></li>
+</ul>
+<p>(To achieve a custom distribution of color ranges such as the one shown in the above example, you must use the <strong>Contour Manager…</strong> under the JOA Resources menu.)</p>
+</li>
+</ul>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="../chapter_7/index.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Chapter Seven</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="s6b.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Example S6B: A Vertical Profile Visualized from CTD, Bottle, and Multi-year Averaged Data</div>
+                
+              </div>
+            </a>
+        </div>
+
+        <div class="related-information">
+              Copyright &#169; Copyright © 2011 Elsevier Inc. All rights reserved. |
+          Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+          <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
+            | <a class="muted-link" href="../../_sources/dpo_joa_examples/chapter_S6/s6c.rst.txt"
+               rel="nofollow">
+              Show Source
+            </a>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Example S6C: A Vertical Section Visualized from CTD, Bottle, and Multi-year Averaged Data</a><ul>
+<li><a class="reference internal" href="#exercise-s16c-01-comparing-data-multiple-data-types-ctd-bottle-and-multi-year-averaged-data">Exercise S16C-01: Comparing Data - Multiple Data Types (CTD, Bottle, and Multi-year Averaged Data)</a></li>
+<li><a class="reference internal" href="#exercise-6sc-02-high-resolution-contoured-ctd-sections">Exercise 6SC-02: High-Resolution Contoured CTD Sections</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/scripts/furo.js"></script>
+    </body>
+</html>

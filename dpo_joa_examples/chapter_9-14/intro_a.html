@@ -1,0 +1,358 @@
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="Example 9-14B: Introduction to JOA Maps" href="intro_b.html" /><link rel="prev" title="Chapters Nine through Fourteen" href="index.html" />
+
+    <meta name="generator" content="sphinx-4.3.1, furo 2021.11.23"/>
+        <title>Example 9-14A: Before we get started - Descriptive Physical Oceanography JOA Examples</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?digest=7f0192ddeb2adecfbaa87ffbcf67d16358b30bc1" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?digest=0af69da206d614734f649b27d4cdc2dd6c31f41d" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  body[data-theme="dark"] {
+    --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+  }
+  @media (prefers-color-scheme: dark) {
+    body:not([data-theme="light"]) {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+  }
+</style></head>
+  <body>
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" />
+      <line x1="4" y1="6" x2="20" y2="6" />
+      <line x1="10" y1="12" x2="20" y2="12" />
+      <line x1="6" y1="18" x2="20" y2="18" />
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../index.html"><div class="brand">Descriptive Physical Oceanography JOA Examples</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
+  
+  
+  <span class="sidebar-brand-text">Descriptive Physical Oceanography JOA Examples</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../background/index.html">Background</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../background/about.html">About the DPO JOA Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../background/intro.html">Introduction and Brief History of Java OceanAtlas</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_1/index.html">Chapter One</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_S1/index.html">Chapter One Supplement</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter_2/index.html">Chapter Two</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_2/2a.html">Example 2A: Dimensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_2/2b.html">Example 2B: Sea-floor Dimensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_2/2c.html">Example 2C: Bathymetry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_2/2d.html">Example 2D: DPO Extra Topic; Map Projections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_2/2e.html">Example 2E: DPO Extra Topic; Making a .joa file</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter_3/index.html">Chapter Three</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_3/3a.html">Example 3A: Before we get started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_3/3b.html">Example 3B: Physical Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_3/3c.html">Example 3C: Effect of Temperature and Salinity on Compressibility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_3/3d.html">Example 3D: Static Stability and Brunt-Väisälä Frequency</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_3/3e.html">Example 3E: Sound in the Sea</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter_4/index.html">Chapter Four</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_4/4a.html">Example 4A: Before we get started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_4/4b.html">Example 4B: Surface properties of world ocean waters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_4/4c.html">Example 4C: Vertical Distribution of Water Properties Along South-to-North Transects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_4/4d.html">Example 4D: Vertical Distribution of Water Properties Along South-to-North Transects</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_5/index.html">Chapter Five</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter_6/index.html">Chapter Six</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_6/6a.html">Example 6A: Sections with Vertical Axes other than Pressure (or Depth)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_6/6b.html">Example 6B: Sections with horizontal axis other than distance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_6/6c.html">Example 6C: Exploiting some of JOA’s Mapping Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_6/6d.html">Example 6D: Maps of Properties on Density and Other Surfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_6/6e.html">Example 6E: Maps of Properties on Extrema</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_6/6f.html">Example 6F: Plotting Map of Average of Properties Between Two Surfaces</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter_S6/index.html">Chapter Six Supplement</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_S6/s6a.html">Example S6A: Before We Get Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_S6/s6b.html">Example S6B: A Vertical Profile Visualized from CTD, Bottle, and Multi-year Averaged Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_S6/s6c.html">Example S6C: A Vertical Section Visualized from CTD, Bottle, and Multi-year Averaged Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter_7/index.html">Chapter Seven</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_7/7a.html">Example 7A: Before we get started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_7/7b.html">Example 7B: Dynamic Topography Maps</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_S7/index.html">Chapter Seven Supplement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_8/index.html">Chapter Eight</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_S8/index.html">Chapter Eight Supplement</a></li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">Chapters Nine through Fourteen</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Example 9-14A: Before we get started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro_b.html">Example 9-14B: Introduction to JOA Maps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro_c.html">Example 9-14C: Extracting Data Subsets from Map Plots &amp; Advanced JOA Tools for Working with Basin-Scale Data Sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro_d.html">Example 9-14D: Using Data Subsets &amp; Advanced JOA Tools</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_9/index.html">Chapter Nine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_10/index.html">Chapter Ten</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_11/index.html">Chapter Eleven</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_12/index.html">Chapter Twelve</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_13/index.html">Chapter Thirteen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_14/index.html">Chapter Fourteen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_S15/index.html">Chapter Fifteen Supplement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary.html">JOA Glossary</a></li>
+</ul>
+
+</div>
+</div>
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section id="example-9-14a-before-we-get-started">
+<h1>Example 9-14A: Before we get started<a class="headerlink" href="#example-9-14a-before-we-get-started" title="Permalink to this headline">¶</a></h1>
+<p>DPO Chapters 9-13 discuss the water masses, circulation and other aspects of the descriptive physical oceanography of each of the principal oceans and their marginal seas, with a discussion of global subjects provided in Chapter 14 and climate and ocean topics in Chapter S15.</p>
+<p>We use nearly the same approach to using Java OceanAtlas to illuminate the oceanographic features of each ocean. Thus we provide here an overview of the DPO Examples data files and tools which should prove useful for DPO Chapters 9-14.</p>
+<p>For each of the regional chapters (9-13), we provide:</p>
+<ul>
+<li><p><strong>one or more gridded, full-resolution data sets from WOA09 which cover the region</strong></p>
+<p>These are at the full WOA09 lateral resolution of one degree of latitude and one degree of longitude, but with no grid points retained over land, below the ocean bottom, or any other region where there are no water column data.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We are in the process of updating the WOA05 data files to WOA09. Some on-line data files for the JOA DPO Examples have an “05” instead of the “09” shown here. This is of no consequence to the use of the WOA data files in the JOA DPO Examples.</p>
+</div>
+</li>
+<li><p><strong>one or more gridded, decimated (reduced-resolution) data sets from WOA09 which cover the region</strong></p>
+<p>These are at the full WOA09 lateral resolution of one degree of latitude and one degree of longitude in the tropics and subtropics, but with values at half of the longitudes removed poleward of 60 degrees, another half removed poleward of 75 degrees, and yet another half removed poleward of 85 degrees, and with no data points retained over land. This reduces the file size from the original WOA09 by reducing WOA09’s horizontally closely-spaced grid points at higher latitudes (where lines of longitude come closer together).</p>
+</li>
+<li><p><strong>(optional) a gridded, heavily decimated data set from WOA98 which covers the region</strong></p>
+<p>These are at half WOA98 lateral resolution of one degree of latitude and one degree of longitude in the tropics and subtropics, with values at half of those longitudes removed poleward of 60 degrees, another half removed poleward of 75 degrees, and yet another half removed poleward of 85 degrees, and with no data points retained over land. Also, these are saved in an older binary format (“.poa”) which has a smaller file size. This greatly reduces the file size from the WOA09 version. JOA will load and run these files quickly, which is useful on slower computers and/or those with less RAM, and is also useful for displaying the entire World Ocean in one data set efficiently on any computer.</p>
+</li>
+<li><p><strong>data from basin-scale transects from recent oceanographic expeditions</strong></p>
+<p>These were selected on the basis of their high data quality, their inclusion of oxygen, nutrient, CFC, and ocean carbon data, and their basin-spanning paths. We prepared both bottle and CTD data from each transect (usually the CTD data are decimated to reduce file size), cleaning bad and questionable data from the files, and eliminating stations and casts not part of the principal transect path of interest.</p>
+</li>
+<li><p><strong>data from useful basin-scale transects from older oceanographic expeditions</strong></p>
+<p>These were selected on the basis of their location, high data quality, inclusion of oxygen and nutrient data, and their basin-spanning paths. Most of the older cruises have bottle data only, and for many we have cleaned bad and questionable data from the files, and eliminated stations and casts not part of the principal transect path of interest. Some of the older cruise tracks are nearly co-located with those from more recent cruises, and thus can be used to examine seawater property changes over the intervals between expeditions.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To examine the difference between two co-located transect data sets, please see “Section Difference” under “Section Calculations” in the JOA User Guide for techniques to subtract one section from another.</p>
+</div>
+</li>
+<li><p><strong>WOA09 profiles following the same track as the basin-scale transects, above</strong></p>
+<p>These present a multi-year averaged depiction of temperature, salinity, oxygen, and nutrients along each transect, at the WOA09 native one-degree resolution.</p>
+</li>
+</ul>
+<p>For the World Ocean chapter (Chapter 14) we provide:</p>
+<ul>
+<li><p><strong>A gridded, full-resolution data set from WOA09 which covers the entire World Ocean</strong></p>
+<p>This is at the full WOA09 lateral resolution of one degree of latitude and one degree of longitude, but with no grid points retained over land, below the ocean bottom, or any other region where there are no water column data. In order to get this very large file to load within the limitations of JOA, we have saved it in an older, more compact format (“.poa”) which JOA can open. Use of this very large data set may greatly slow down the response of your computer.</p>
+</li>
+<li><p><strong>A gridded, decimated (reduced-resolution) data set from WOA09 which covers the entire World Ocean</strong></p>
+<p>This is at the full WOA09 lateral resolution of one degree of latitude and one degree of longitude in the tropics and subtropics, but with values at half of the longitudes removed poleward of 60 degrees, another half removed poleward of 75 degrees, and yet another half removed poleward of 85 degrees, and with no data points retained over land. This reduces the file size from the original WOA09 by not reducing very closely-spaced grid points at higher latitudes (where lines of longitude come closer together). This is a large data set and may slow down the response of your computer.</p>
+</li>
+<li><p><strong>A gridded, heavily decimated data set from WOA98 which covers the entire World Ocean</strong></p>
+<p>This is at half WOA98 lateral resolution of one degree of latitude and one degree of longitude in the tropics and subtropics, with values at half of those longitudes removed poleward of 60 degrees, another half removed poleward of 75 degrees, and yet another half removed poleward of 85 degrees, and with no data points retained over land. Also, these are saved in an older binary format (“.poa”) which has a smaller file size. This greatly reduces the file size from the WOA09 versions, so will load and run quickly on slower computers with less RAM.</p>
+</li>
+<li><p><strong>Meridional sections from WOA09 every 10 degrees of longitude and zonal sections every 5 degrees of latitude</strong></p>
+<p>These are provided to fill out global data coverage. The zonal sections (the ones along constant lines of latitude) permit easy comparison of each of the oceans from a single data file. Note, however, that due to the one-degree horizontal resolution of WOA09, most boundary currents - which are narrow - are not resolved in WOA09 data.</p>
+</li>
+<li><p><strong>“Grand Tour of the Oceans” bottle and CTD data files (and a section made from WOA09 grid points following the same path)</strong></p>
+<p>The “Grand Tour of the Oceans” is an edited collection of oceanographic bottle and CTD data files which, when assembled, create a transect of the ocean from the northwestern Ross Sea near the Antarctic continent north through the Pacific Ocean and Bering Strait, across the Arctic Ocean over the North Pole and through the Nordic Seas, south through the Atlantic Ocean, and ending at the Antarctic continent in the Weddell Sea. The Grand Tour provide a unique “real data” (as opposed to averaged data such as WOA09) examination of two principal oceans (the Pacific and Atlantic) along with the interesting Arctic region. The section’s pathways are determined more by the availability of appropriate data than by an ideal for illustration of water masses and circulation, yet the Grand Tour yields useful multi-ocean comparisons. The Grand Tour bottle data file includes these measured parameters: temperature, salinity, dissolved oxygen, nutrients (NO3, PO4, and SiO3), CFC-11, CFC-12, dissolved inorganic carbon, and total alkalinity. [The Grand Tour ocean data files include a “2” designation (e.g., “Ocean_Grand_Tour_2_bottle.joa”) to distinguish them from an earlier Grand Tour assembled by Swift, which follows a different path.] We also provide a section following the same path as the Grand Tour, but assembled from the closest WOA09 averaged data grid points to the station track. This provides an opportunity both to view long-term averaged data along the track and to examine over a large region the many differences in depiction of gradients and boundaries between data from oceanographic expeditions and mathematically-constructed gridded data.</p>
+</li>
+</ul>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="intro_b.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Example 9-14B: Introduction to JOA Maps</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="index.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Chapters Nine through Fourteen</div>
+                
+              </div>
+            </a>
+        </div>
+
+        <div class="related-information">
+              Copyright &#169; Copyright © 2011 Elsevier Inc. All rights reserved. |
+          Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+          <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
+            | <a class="muted-link" href="../../_sources/dpo_joa_examples/chapter_9-14/intro_a.rst.txt"
+               rel="nofollow">
+              Show Source
+            </a>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer no-toc">
+      
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/scripts/furo.js"></script>
+    </body>
+</html>

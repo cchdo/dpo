@@ -1,0 +1,3 @@
+Example 7A: Before we get started
+=================================
+DPO Chapter 7 deals with subjects that lie outside the scope of entry-level use of the Java OceanAtlas application. We will, however, cover use of JOA to calculate and map dynamic topography (DPO Section 7.6).

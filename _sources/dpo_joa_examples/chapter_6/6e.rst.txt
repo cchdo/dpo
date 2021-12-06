@@ -1,0 +1,44 @@
+Example 6E: Maps of Properties on Extrema
+=========================================
+Sometimes one wants to explore the distribution of property maxima or minima (collectively known as “extrema”) in a data file. Java OceanAtlas can locate and plot values of extrema. Of course multiple extrema can exist in one vertical profile, so JOA does not always return the expected result, but the results can nonetheless still be instructive.
+
+Files that may be needed or created in this example:
+
+* WOA05_NorthAtlantic_square.joa
+
+Exercise 6e-01
+--------------
+Continue from 6D-01:
+
+To locate and plot the salinity minimum at each of the stations in the WOA05_NorthAtlantic.joa data file:
+
+* **Calculations → Station Parameters → Extrema…**
+* Set up (as shown below) for a calculation of the **Min** (minimum) in **SALT** (salinity) over each profile
+
+  .. figure:: figures/fig6e-01.png
+
+    Fig 6e-01 Station Extrema Calculations dialog box
+
+* Click **OK**, the result will appear in the Data Window
+* With the open **Orthographic Map Plot** in the foreground, bring up the **Configure Map Plot** dialog box:
+
+  * Double-click or control-click on a map plot
+  * Or type [ctrl/cmd]-R or **Edit → Edit: plotname** when a map plot is the front-most window
+
+* Select the **Station calculation values** sub-panel of the **Station Colors** tab
+* A list of all available station calculations will be shown. Here we have just the **Min of SALT** calculation. Select it, and then select the SALT-global_cbr.xml color bar, as shown below
+
+  .. figure:: figures/fig6e-02.png
+
+    Fig 6e-02 Station Calculation Values sub-panel of Station Colors panel of the Configure Map Plot dialog box
+
+* Now when you click **OK**, you should see this plot:
+
+  .. figure:: figures/fig6e-03.png
+
+    Fig 6e-03 Orthographic plot
+
+.. admonition:: Examine
+  :class: tip
+
+  This is another interesting plot, though a bit tricky to interpret in places. Start by looking at the freshest (bluest) areas. Can you find the areas where the Mississippi, Amazon, and Congo rivers enter the oceans? See how the fresh Baltic Sea outflows are swept northward into the Arctic? See how the fresh Arctic outflows hug the eastern boundary of North America but also spread into the interior between Canada and Greenland and north of Iceland?

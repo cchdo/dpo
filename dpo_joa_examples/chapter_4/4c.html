@@ -1,0 +1,647 @@
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="Example 4D: Vertical Distribution of Water Properties Along South-to-North Transects" href="4d.html" /><link rel="prev" title="Example 4B: Surface properties of world ocean waters" href="4b.html" />
+
+    <meta name="generator" content="sphinx-4.3.1, furo 2021.11.23"/>
+        <title>Example 4C: Vertical Distribution of Water Properties Along South-to-North Transects - Descriptive Physical Oceanography JOA Examples</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?digest=7f0192ddeb2adecfbaa87ffbcf67d16358b30bc1" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?digest=0af69da206d614734f649b27d4cdc2dd6c31f41d" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  body[data-theme="dark"] {
+    --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+  }
+  @media (prefers-color-scheme: dark) {
+    body:not([data-theme="light"]) {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+  }
+</style></head>
+  <body>
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" />
+      <line x1="4" y1="6" x2="20" y2="6" />
+      <line x1="10" y1="12" x2="20" y2="12" />
+      <line x1="6" y1="18" x2="20" y2="18" />
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../index.html"><div class="brand">Descriptive Physical Oceanography JOA Examples</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
+  
+  
+  <span class="sidebar-brand-text">Descriptive Physical Oceanography JOA Examples</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../background/index.html">Background</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../background/about.html">About the DPO JOA Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../background/intro.html">Introduction and Brief History of Java OceanAtlas</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_1/index.html">Chapter One</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_S1/index.html">Chapter One Supplement</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter_2/index.html">Chapter Two</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_2/2a.html">Example 2A: Dimensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_2/2b.html">Example 2B: Sea-floor Dimensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_2/2c.html">Example 2C: Bathymetry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_2/2d.html">Example 2D: DPO Extra Topic; Map Projections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_2/2e.html">Example 2E: DPO Extra Topic; Making a .joa file</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter_3/index.html">Chapter Three</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_3/3a.html">Example 3A: Before we get started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_3/3b.html">Example 3B: Physical Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_3/3c.html">Example 3C: Effect of Temperature and Salinity on Compressibility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_3/3d.html">Example 3D: Static Stability and Brunt-Väisälä Frequency</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_3/3e.html">Example 3E: Sound in the Sea</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">Chapter Four</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="4a.html">Example 4A: Before we get started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4b.html">Example 4B: Surface properties of world ocean waters</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Example 4C: Vertical Distribution of Water Properties Along South-to-North Transects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4d.html">Example 4D: Vertical Distribution of Water Properties Along South-to-North Transects</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_5/index.html">Chapter Five</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter_6/index.html">Chapter Six</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_6/6a.html">Example 6A: Sections with Vertical Axes other than Pressure (or Depth)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_6/6b.html">Example 6B: Sections with horizontal axis other than distance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_6/6c.html">Example 6C: Exploiting some of JOA’s Mapping Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_6/6d.html">Example 6D: Maps of Properties on Density and Other Surfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_6/6e.html">Example 6E: Maps of Properties on Extrema</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_6/6f.html">Example 6F: Plotting Map of Average of Properties Between Two Surfaces</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter_S6/index.html">Chapter Six Supplement</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_S6/s6a.html">Example S6A: Before We Get Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_S6/s6b.html">Example S6B: A Vertical Profile Visualized from CTD, Bottle, and Multi-year Averaged Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_S6/s6c.html">Example S6C: A Vertical Section Visualized from CTD, Bottle, and Multi-year Averaged Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter_7/index.html">Chapter Seven</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_7/7a.html">Example 7A: Before we get started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_7/7b.html">Example 7B: Dynamic Topography Maps</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_S7/index.html">Chapter Seven Supplement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_8/index.html">Chapter Eight</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_S8/index.html">Chapter Eight Supplement</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter_9-14/index.html">Chapters Nine through Fourteen</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_9-14/intro_a.html">Example 9-14A: Before we get started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_9-14/intro_b.html">Example 9-14B: Introduction to JOA Maps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_9-14/intro_c.html">Example 9-14C: Extracting Data Subsets from Map Plots &amp; Advanced JOA Tools for Working with Basin-Scale Data Sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_9-14/intro_d.html">Example 9-14D: Using Data Subsets &amp; Advanced JOA Tools</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_9/index.html">Chapter Nine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_10/index.html">Chapter Ten</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_11/index.html">Chapter Eleven</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_12/index.html">Chapter Twelve</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_13/index.html">Chapter Thirteen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_14/index.html">Chapter Fourteen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_S15/index.html">Chapter Fifteen Supplement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary.html">JOA Glossary</a></li>
+</ul>
+
+</div>
+</div>
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section id="example-4c-vertical-distribution-of-water-properties-along-south-to-north-transects">
+<h1>Example 4C: Vertical Distribution of Water Properties Along South-to-North Transects<a class="headerlink" href="#example-4c-vertical-distribution-of-water-properties-along-south-to-north-transects" title="Permalink to this headline">¶</a></h1>
+<p>DPO Text References:</p>
+<div class="table-wrapper"><table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%"/>
+<col style="width: 80%"/>
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>DPO 4.2.5</p></td>
+<td><p>Deep water temperature and potential temperature</p></td>
+</tr>
+<tr class="row-even"><td><p>DPO 4.3.3</p></td>
+<td><p>Intermediate depth salinity</p></td>
+</tr>
+<tr class="row-odd"><td><p>DPO 4.3.4</p></td>
+<td><p>Deep water salinity</p></td>
+</tr>
+<tr class="row-even"><td><p>DPO 4.4.3</p></td>
+<td><p>Depth distribution of potential density</p></td>
+</tr>
+<tr class="row-odd"><td><p>DPO 4.5</p></td>
+<td><p>Dissolved Oxygen</p></td>
+</tr>
+<tr class="row-even"><td><p>DPO 4.6</p></td>
+<td><p>Nutrients and other tracers</p></td>
+</tr>
+</tbody>
+</table></div>
+<p>We will now use three custom-made data files to examine the vertical distribution of water properties along south-to-north transects through the eastern Atlantic, central Pacific, and eastern Indian Oceans. The three data files needed are:</p>
+<ul class="simple">
+<li><p>WOA09_A16.joa (Antarctic to Iceland)</p></li>
+<li><p>WOA09_P16.joa (Antarctic to Kodiak)</p></li>
+<li><p>WOA09_I8S_I9N.joa (Antarctica to Bangladesh)</p></li>
+</ul>
+<p>The <strong>WOA09</strong> in each data file name reminds you that these transects were made (are subsets taken from) the World Ocean Atlas 2009 annual one-degree data set.</p>
+<p>The <strong>A16</strong>, <strong>P16</strong>, and <strong>I8S_I9N</strong> in the data file names indicate that the path chosen for each transect follows the track of an oceanographic section occupied during the World Ocean Circulation Experiment (<strong>WOCE</strong>) during the 1990’s.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can find data and information about oceanographic expeditions along these and other lines at <a class="reference external" href="http://cchdo.ucsd.edu">http://cchdo.ucsd.edu</a></p>
+</div>
+<div class="seealso admonition">
+<p class="admonition-title">Learn More</p>
+<p>WOCE and WOCE line numbers (parts are copied from WOCE online information)</p>
+<p>The World Ocean Circulation Experiment (WOCE) was a component of the World Climate Research Program (WCRP) (<a class="reference external" href="http://wcrp.wmo.int/wcrp-index.html">http://wcrp.wmo.int/wcrp-index.html</a>) and remains the most ambitious oceanographic experiment undertaken to date.</p>
+<p>The aims of the program were to establish the role of the oceans in the earth’s climate and to obtain a baseline dataset against which future change could be assessed.</p>
+<p>Sophisticated numerical ocean models were also developed to provide a framework for the interpretation of the observations and for the prediction of the future ocean state.</p>
+<p>About 30 nations participated in the observational program by using ships to make physical and chemical observations and by employing moored and drifting instrumentation. Global observations were also made from satellites.</p>
+<p>The field phase of the project lasted from 1990-1998 and was followed by Analysis, Interpretation, Modeling, and Synthesis activities. This, the AIMS phase of WOCE, officially continued to the end of 2002.</p>
+<p>On the completion of WOCE other large-scale projects which involve the ocean and climate are being actively pursued. Among them are:</p>
+<ul class="simple">
+<li><p>CLIVAR (<a class="reference external" href="http://www.clivar.org">http://www.clivar.org</a>): a global study of the earth’s climate variability and predictability</p></li>
+<li><p>GODAE (<a class="reference external" href="http://www.godae.org">http://www.godae.org</a>): the Global Ocean Data Assimilation Experiment</p></li>
+<li><p>ARGO (<a class="reference external" href="http://www.argo.ucsd.edu/">http://www.argo.ucsd.edu/</a>): a global array of temperature/salinity profiling floats</p></li>
+</ul>
+<p>Although there is meaning to some parts of the WOCE transect names (e.g., <strong>A</strong>, <strong>P</strong>, <strong>I</strong>, and <strong>S</strong> stand for Atlantic, Pacific, Indian, and Southern, respectively), the WOCE line numbering scheme does not have additional meaning.</p>
+</div>
+<p>In Examples for a later DPO chapter, we will compare data from actual oceanographic expeditions along each of these WOCE lines with WOA averaged ocean data.</p>
+<p>Here, however, the WOA versions of the WOCE transects handily provide a generally accurate depiction of:</p>
+<ul class="simple">
+<li><p>The basic vertical, south-to-north configuration of global ocean seawater property distributions</p></li>
+<li><p>Their basin-to-basin and equator-to-high-latitude variations</p></li>
+</ul>
+<div class="seealso admonition">
+<p class="admonition-title">Learn More</p>
+<p>Meridional and Zonal Vertical Sections</p>
+<p>In standard oceanographic terminology, vertical sections are vertically-oriented slices through the ocean.</p>
+<p>A “meridional” vertical section is aligned south-to-north (or north-to-south) along a meridian, or longitude line. A meridional vertical section need not, however, exactly follow a line of constant longitude - this is a concept rather than a rule.</p>
+<p>In the broadest, most general terms, meridional sections are often useful to illustrate the variations in seawater characteristic between climate zones (e.g., the equator - tropics - sub-tropics - subpolar - polar zones).</p>
+<p>A “zonal” vertical section is aligned west-to-east (or east-to-west) along a latitude line. Again, this is a concept, so a zonal vertical section need not exactly follow a line of constant latitude. Zonal sections help illustrate where, in the oceans, exchanges between climate zones take place - some can be used to calculate fluxes and transports between climate zones.</p>
+<p>We have organized the vertical section data files, included with the DPO JOA Examples, to begin with south (or west) profiles on the left hand side of section plots proceeding to north (or east) on the right.</p>
+<p>This should help you keep your bearings when examining sections in JOA. It should also be noted that while many oceanographers use this orientation convention; many other oceanographers are equally committed to its opposite.</p>
+</div>
+<p>JOA’s vertical section plotting tools are versatile and complex. To streamline the plot-generation interface, we have provided the ability to get a usable plot with the fewest feasible number of user-made choices:</p>
+<ul class="simple">
+<li><p>Select a parameter to plot on a vertical section</p></li>
+<li><p>Select a surface onto which to interpolate the data (more about this below)</p></li>
+<li><p>Choose a color bar to color/contour the section data (or approve JOA’s automatic color/contour choice, if presented to you)</p></li>
+<li><p>Click on <strong>Plot</strong> (or <strong>OK</strong>) and, voila, you get a usable vertical section.</p></li>
+</ul>
+<p>Now for the details.</p>
+<p>Files that may be needed or created in this example:</p>
+<ul class="simple">
+<li><p>WOA09_A16.joa</p></li>
+<li><p>WOA09_P16.joa</p></li>
+<li><p>WOA09_I8S_I9N.joa</p></li>
+</ul>
+<section id="exercise-4c-01-vertical-sections-making-a-contour-map-plot">
+<h2>Exercise 4C-01: Vertical Sections - Making a Contour Map Plot<a class="headerlink" href="#exercise-4c-01-vertical-sections-making-a-contour-map-plot" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p>Start JOA</p></li>
+<li><p><strong>File → Open…</strong> → WOA09_A16.joa</p>
+<p>The Data Window should look approximately like this:</p>
+<figure class="align-default" id="id1">
+<img alt="../../_images/fig4c-01.png" src="../../_images/fig4c-01.png"/>
+<figcaption>
+<p><span class="caption-text">FIG 4c-01 Java OceanAtlas Data Window</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p><strong>Plots → Contour…</strong></p>
+<p>This will bring up the JOA <strong>Contour Plot</strong> dialog box:</p>
+<figure class="align-default" id="id2">
+<img alt="../../_images/fig4c-02.png" src="../../_images/fig4c-02.png"/>
+<figcaption>
+<p><span class="caption-text">FIG 4c-02 The Primary Contours panel of the Contour Plot dialog box</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>We show this dialog box as it appeared after we have made four choices:</p>
+<ul class="simple">
+<li><p>We selected a <strong>Parameter</strong> to plot - we selected <strong>TEMP</strong> (= Temperature).</p></li>
+<li><p>We selected the PRES-0-6000_srf.xml Interpolation Surface onto which to interpolate the temperature data (see below). This is a pre-chosen (by Swift) set of 64 pressure surfaces that provide an oceanographically-useful interpolated version of typical open ocean profile data.</p></li>
+<li><p>We selected (actually, JOA auto-chose it for us and we accepted it) the TEMP-global_cbr.xml Colorbar to color/contour the interpolated data.</p></li>
+<li><p>We selected <strong>Latitude</strong> under <strong>Offset</strong></p></li>
+</ul>
+<p>All other choices in the <strong>Contour Plot</strong> dialog box shown are JOA defaults (see below for explanations of each of these).
+These three choices - plus the defaults - are sufficient for JOA to interpolate the data and draw a section.
+In fact, if you click <strong>Plot</strong> (or <strong>OK</strong>) in the <strong>Contour Plot</strong> dialog box at this point, JOA will draw this solid color contoured section:</p>
+<figure class="align-default" id="id3">
+<img alt="../../_images/fig4c-03.png" src="../../_images/fig4c-03.png"/>
+<figcaption>
+<p><span class="caption-text">FIG 4c-03 Contour plot</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Recall that in the left-to-right convention used in these DPO JOA Examples, south (the Weddell Sea, off Antarctica) is on the left and the Icelandic continental slope is on the right.</p>
+</div>
+<p>The bathymetric and oceanographic features on this plot look similar to those in DPO Figure 4.10(a), as well they should, since you have just plotted multi-year averaged data along the same path as the single-cruise data used by the DPO authors. With JOA, however, it is easy to explore the data</p>
+<div class="seealso admonition">
+<p class="admonition-title">Learn More</p>
+<p>JOA - Vertical Section Plots (Contour…)</p>
+<p>Java OceanAtlas contour plots are vertical section plots with contours/colors applied to the entire active data set, for example a contoured vertical section of salinity versus pressure.</p>
+<p>It is not necessary, however, for the z-axis on a contour plot to be restricted to pressure. Any observed or calculated parameter can be used as the vertical axis, but an ‘interpolation surfaces’ must exist or be created for it, (see the Surface Manager section in the JOA User Guide) and any observed or calculated parameter can be plotted on it. For example, it is possible to plot a contoured vertical section of phosphate with nitrate as the vertical axis.</p>
+<p>The horizontal axis on a Java OceanAtlas contour plot is either:</p>
+<ul class="simple">
+<li><p>Spatially related (i.e., the horizontal spacing is proportional to the distance between stations, or to latitude or longitude)</p></li>
+<li><p>Temporally related (i.e., the horizontal spacing is proportional to the time between stations)</p></li>
+<li><p>A fixed sequential offset can be used</p></li>
+</ul>
+<p>As with all Java OceanAtlas plots, contour plots share a linked data cursor with other JOA plots and all contour plots. Color/contour bars and standard surfaces used in preparing contour plots can be customized in numerous ways.</p>
+<p>X and y interpolations from the observed data are required before Java OceanAtlas can generate contoured parameter plots.</p>
+<p>The interpolations are carried out on surfaces (standard values) of the y-axis.</p>
+<p>The methodology and perhaps the philosophy underlying interpolations are important issues. Our goal was to provide useful and accurate contour plots that show all features of the data while adding no false features. Hence, we chose simple linear interpolation between closest points on the y-axis and adjacent profiles (stations) on the x-axis (filled contours are actually produced using a bi-linear interpolation algorithm). Java OceanAtlas uses elementary gridding and contouring algorithms in order to bring out all the features (and problems) of the data.</p>
+<p>Java OceanAtlas draws its plot contours (or color divisions on a solid-color contour section) on a 2-dimensional grid of the stations and standard levels. It places a defined contour value by linear interpolation using the data from the two closest standard levels at each station.</p>
+<p>Java OceanAtlas looks for all instances of a contour value ‘fit’ at each station from the smallest-valued standard level to the highest-valued standard level.</p>
+<p>The application then has the interesting task of joining these values to those from adjacent stations. The application does this in a simplistic way at first not looking ‘far’ away to join lines.</p>
+<p>However, interpolation options are available for far-field interpolating, which can assist the Java OceanAtlas interpolator to fill in missing values from the interpolation before contouring, in effect looking past a user-provided number of missing-data stations (horizontal) and/or observations (vertical) for contour data. This is useful to fill in contours where data are missing and/or sparse.</p>
+<p>At the time of this writing, there are no smoothing or ‘objective mapping’ features.</p>
+</div>
+<p>We suggest that users of the DPO JOA Examples now become familiar with JOA Contour Plot Options via the supplied link, before continuing to plot additional vertical sections for the DPO JOA Examples. [As always, see the JOA User Guide for in-depth discussion and details.</p>
+<div class="seealso admonition">
+<p class="admonition-title">Learn More</p>
+<p>JOA - Contour Plot Options (referring to the Contour Plot dialog box)</p>
+<p>Options accessed from the <strong>Primary Contours</strong> (default/top) page of the Contour Plot dialog box:</p>
+<dl>
+<dt>Parameter</dt><dd><p>This list in the upper left contains all original and calculated parameters. Any one parameter can be selected by clicking on its name.</p>
+</dd>
+<dt>Interpolations</dt><dd><p>This list contains all standard level files available to Java OceanAtlas. (More of these standard level files can be made from the <strong>Surface Manager</strong> found under the <strong>Resources</strong> menu.) Any one set of interpolation surfaces can be selected by clicking on its name.</p>
+</dd>
+<dt>Interpolation Options</dt><dd><p>Click on this button to brings up the <strong>Interpolation Options</strong> dialog:</p>
+<figure class="align-default" id="id4">
+<img alt="../../_images/fig4c-04.png" src="../../_images/fig4c-04.png"/>
+<figcaption>
+<p><span class="caption-text">FIG 4c-04 Interpolation Options dialog box</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p><strong>Top down</strong> : The default interpolation direction choice, Java OceanAtlas searches the data for the first match to the current standard surface from the shallowest observation to the deepest observation, and vice versa for the Bottom up choice.</p>
+<p>When one is plotting a contoured section of a parameter onto pressure (i.e., pressure is the y axis), this is not an issue. But imagine plotting silicate onto standard surfaces of salinity in an ocean region where there is a mid-depth salinity extremum. In that case the plotted result would vary depending on this interpolation direction.</p>
+<p><strong>Missing Value Options</strong> : This option permits Java OceanAtlas to look in the horizontal and/or vertical for data to use in preparing the interpolation for a contour plot when there are missing data.</p>
+<p>Sometimes one prefers to visualize all the ‘holes’ in the data, but with sparse data; for example, dissolved helium data that are not present at every bottle or every station in a hydrographic file, it is sometimes useful to use JOA’s missing value options to fill in the holes in the interpolation grid.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is also possible to achieve a useful contour plot by using a station filter to remove all stations totally missing the contour parameter.</p>
+</div>
+<p>JOA provides two basic techniques (and associated options) for dealing with missing data:</p>
+<ul>
+<li><p>Vertical interpolation: JOA looks for observations that bound a standard level to interpolate to that level.</p>
+<p>If one of the bounding observations in missing, this option directs JOA to look n number of observations below or above (depending upon the interpolation direction) in the profile for a non-missing value.</p>
+</li>
+<li><p>Far-field or horizontal interpolation: If a bounding observation in the current cast is missing, this option directs JOA to use up to n surrounding casts (before and after) to interpolate a value for the missing value.</p>
+<p>It does this by first calculating the horizontal gradient of the contour parameter near the depth of the missing observation and secondly using the gradient to create “virtual” observations of the contour parameter at the current profile.</p>
+<p>The closest “virtual” observation to the missing value is then used to interpolate the contour parameter to the surface level. A Maximum distance option is provided so that in cases of uneven station distribution along a track, Java OceanAtlas can be restricted from looking unrealistically far away for data to complete an interpolation.</p>
+</li>
+</ul>
+<p><strong>Maximum number of observations</strong>: This option is provided to limit the number of observations away the interpolator will look for a non-missing value. This option is most useful for bottle profiles where the vertical spacing of bottles increases with depth.</p>
+<p><strong>Referenced Interpolations</strong> : These options allow you reference an interpolation to the value of standard level or to a mean cast. It is interesting to note that useful plots can be created with this JOA tool, but we do not use it in the DPO JOA Examples. Please see the JOA User Guide for explanations.</p>
+</dd>
+<dt>Color Bars</dt><dd><p>This area in the upper right of the <strong>Contour Plot</strong> dialog box offers several important, useful choices and features:</p>
+<ul class="simple">
+<li><p>If one or more color bars for the selected parameter already exist, Java OceanAtlas will usually highlight the first matching choice on the list. But any color bar can be selected - and its numerical ranges and colors will be used on the contour plot - whether the color bar matches the parameter being contoured or not.</p></li>
+<li><p>An alternative to selecting a color bar is to have Java OceanAtlas autoscale the contours (or color divisions). This is the only option when no color/contour bar exists for the parameter being contoured.</p></li>
+</ul>
+<p>Four choices of ‘shape’ of contour interval over the data range are provided. These distribute the contours linearly through the contoured parameter’s data value range, or bunch the contours at the low or high ends or in the middle of the range.</p>
+<p>The upper and lower parameter value limits of the autoscale range always cover the full range of the parameter being contoured.</p>
+<p>An autoscaled color bar can be colored by any of the choices in the menu appearing to the immediate right of <strong>Using</strong>:. These color choices - 16 or 32 colors along a blue-white-red (or red-white-blue) or a rainbow or inverse rainbow color path - are supplied by the application and cannot be added to or modified by the user.</p>
+<p>A preview of the selected or autoscaled color bar will appear in the panel at the right of the Colorbars area. This space is blank if there is no selected color/contour bar.</p>
+<p>Double-clicking on the preview color bar preview opens the <strong>Color Bar Editor</strong>, which is described in the JOA User Guide.</p>
+</dd>
+<dt>Contour Style</dt><dd><p>This option allows you to select the basic look of a contour plot which could consist of solid color filled contours (the default), color fill with overlay contour lines, or just contour lines.</p>
+</dd>
+<dt>Contour Options</dt><dd><p>This button in the Style options section of the dialog brings up the <strong>Configure Contour Options</strong> dialog:</p>
+<ul class="simple">
+<li><p>Choices are provided to change from the default coloring of contour lines by the colors of the chosen color/contour bar to black. (This is useful for preparing a contour plot for black &amp; white publication.)</p></li>
+<li><p>An option is provided to plot only every nth contour on a plot. This is especially useful when the <strong>Color fill w/contours</strong> option is chosen, where the added contour lines make it easier to see subtle features in the contours.</p></li>
+<li><p>The contour plot background color can be changed by clicking on the color square, which brings up the color picker, or the background color can be changed to white or black by selecting from the menu of choices to the right of <strong>Styles</strong>.</p></li>
+</ul>
+<figure class="align-default" id="id5">
+<img alt="../../_images/fig4c-05.png" src="../../_images/fig4c-05.png"/>
+<figcaption>
+<p><span class="caption-text">FIG 4c-05 Configure Contour Options dialog box</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</dd>
+<dt>Offset</dt><dd><p>This option makes the station-to-station separation on the horizontal axis of the contour plot either equal, when the offset by sequence option is chosen, or proportional to either distance, latitude, or longitude between stations.</p>
+</dd>
+<dt>Markers</dt><dd><p>This options provides options for no data point markers (default) or for either of two kinds of markers:</p>
+<ul class="simple">
+<li><p>At the levels of the standard surfaces used in the original interpolation, or</p></li>
+<li><p>At the levels of the observed data (Observations) at each station - i.e. on a traditional hydrographic section ‘plotting the bottles’. The size and color of the markers can be also be customized.</p></li>
+</ul>
+</dd>
+<dt>Other</dt><dd><p>This option choices add a <strong>Color Legend</strong> to the plot (the selected or autoscaled color/contour bar).
+This is essential if one wants to know which contour is which (hence the default).
+The other option is to add a browsing feature (Show cross sections).
+These optional features take up quite a bit of space in the <strong>Contour Plot</strong> window, hence reducing the size of the area available for actual contoured data.
+Hence either, both, or neither of these options may be checked.</p>
+<ul class="simple">
+<li><p>Java OceanAtlas will automatically suggest a name for the resulting plot window. The <strong>Window Name</strong> field provides the option to enter a name of your choosing.</p></li>
+</ul>
+<p>Options accessed from the <strong>Overlay Contours</strong> page of the Contour Plot dialog box</p>
+<ul class="simple">
+<li><p>Overlay contours are contours of second parameter on top of a JOA <strong>Contour Plot</strong>. For example, contours of salinity can be added to a JOA contoured temperature section. This interesting feature is not used in the DPO Examples. Overlay contour plots are described in the JOA User Guide Appendix A: Advanced features of Java OceanAtlas 4.0.</p></li>
+</ul>
+<p>Options accessed from the <strong>Axes Scales</strong> page of the <strong>Contour Plot</strong> dialog box</p>
+<ul class="simple">
+<li><p>The top two text fields in the <strong>Y Axis Range</strong> options initially show the minimum and maximum y-axis data values in the chosen set of standard interpolation surfaces, i.e. for PRES-0-6000_srf.xml the minimum is 0 and the maximum is 6000.</p></li>
+<li><p>The ‘interval’ text field is Java OceanAtlas’ best attempt at a logical interval between major tics on the y-axis.</p></li>
+<li><p>To plot only a portion of the range, select the text as necessary and type in the new axis limits to impose on the plot. If this is done, the user should also type in a new interval as/if appropriate. The number of minor tics between major tics can also be specified.</p></li>
+</ul>
+<figure class="align-default" id="id6">
+<img alt="../../_images/fig4c-06.png" src="../../_images/fig4c-06.png"/>
+<figcaption>
+<p><span class="caption-text">FIG 4c-06 Axes Scales panel of the Contour Plot dialog box</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</dd>
+<dt>X Axis Scale</dt><dd><p>is usually set to be autoscaled (the default), but the x-axis scale can be made a specified ratio of kilometers per pixel in order to make plots with matching x-axis scales.</p>
+<ul class="simple">
+<li><p>Note that in some instances with this option not all of the resulting x-axis may be shown in the resulting plot, in which case it may be necessary to increase the width of the plot. The number of minor tics between major tics can also be specified.</p></li>
+</ul>
+</dd>
+<dt>Plot</dt><dd><p>draws the plot as specified.</p>
+</dd>
+<dt>Cancel or Done</dt><dd><p>acts as a cancel feature with no action taken.</p>
+</dd>
+</dl>
+<p>Java OceanAtlas initially scales all contour plots to fit into the same size window on the monitor, regardless of the number of stations, y-axis range, or length of the section. However, the contour plot window can be distorted, resized, or zoomed via the size and zoom boxes, after the plot is drawn, to better match the aspect ratio preferred for the plot.</p>
+</div>
+<p>At this point in your DPO JOA Examples experience, you should be ready to explore ocean-to-ocean differences in some of the most-frequently measured seawater properties.</p>
+<p>The following data files, which we supply, will allow you to plot WOA05 time-averaged sections of temperature, salinity, dissolved oxygen, nitrate, phosphate, and silicate from the Atlantic, Pacific, and Indian Oceans, respectively:</p>
+<ul class="simple">
+<li><p>WOA09_A16.joa (Antarctic to Iceland)</p></li>
+<li><p>WOA09_P16.joa (Antarctic to Kodiak Island)</p></li>
+<li><p>WOA09_I8S_I9N.joa (Antarctica to Bangladesh)</p></li>
+</ul>
+<p>The WOA09 averaged profiles from these were chosen to follow the tracks of the WOCE A16, P16, and I8S/I9N sections shown in DPO Chapter 4.</p>
+<p>If you have sufficient display area for your computer, you can open each of the data files at once in JOA (using JOA’s <strong>Open…</strong> command under JOA’s <strong>File</strong> menu three separate times), resulting in three JOA Data Windows, i.e., one for each data file.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To plot from a specific data set when you have multiple Data Windows open, you must have either its Data Window or any plot window made from that data set as the current (“top most”) window on your computer.</p>
+<p>The JOA Windows menu shows every open JOA window in an easy-to-understand format. Using the Windows menu can help reduce confusion when multiple data files are open in JOA, each with its own plots.</p>
+</div>
+</section>
+<section id="exercise-4c-02-vertical-sections-examining-contour-map-plots">
+<h2>Exercise 4C-02: Vertical Sections - Examining Contour Map Plots<a class="headerlink" href="#exercise-4c-02-vertical-sections-examining-contour-map-plots" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p>From each of the three WOA09 data files, make contoured vertical sections to match the DPO Chapter 4 figures of:</p>
+<ul class="simple">
+<li><p>temperature</p></li>
+<li><p>salinity</p></li>
+<li><p>sigma-0</p></li>
+<li><p>sigma-4</p></li>
+<li><p>silicate</p></li>
+<li><p>oxygen</p></li>
+<li><p>nitrate</p></li>
+</ul>
+</li>
+<li><p>Compare the South-to-North and vertical distributions of each parameter in each of the three principal ocean basins:</p>
+<ul class="simple">
+<li><p>Use the <strong>x-axis scale</strong> function of the <strong>Axes scales</strong> page of the <strong>Contour Plot</strong> dialog box to set the same x-axis scale for all three sections</p></li>
+<li><p>Also adjust the y-axes to be the same</p></li>
+</ul>
+<p>We show the three salinity sections below aligned at the Equator:</p>
+<figure class="align-default" id="id7">
+<img alt="../../_images/fig4c-07.png" src="../../_images/fig4c-07.png"/>
+<figcaption>
+<p><span class="caption-text">FIG 4c-07 Three salinity sections</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Remember, you can click the mouse pointer on any location on any section, and the JOA browsing dot will jump to the closest data location to that spot.</p>
+<p>Meanwhile the JOA Data Window will show the data at that point, and the browsing spot on other JOA plots from that data set will jump to that data point on each plot. This linking of the JOA browsing mechanism is useful in exploring data.</p>
+</div>
+</li>
+<li><p>Examine each of the section trios with an eye to features which are similar in each of the oceans, and features which differ.</p></li>
+</ul>
+<div class="tip admonition">
+<p class="admonition-title">Examine</p>
+<p>In similar-looking features, in which ocean and/or hemisphere is each most well developed (most extreme)?</p>
+<p>Consider, also, that all three sections reach into the Southern Ocean, which is a circumpolar feature.</p>
+<p>You will find some interesting differences in water properties between the Atlantic and Pacific Oceans in particular. For example, in the salinity sections above, which are colored/contoured with the same JOA color bar, it is obvious that the North Atlantic Ocean is significantly saltier than the North Pacific Ocean.</p>
+<p>The DPO text will discuss this in later chapters, but this exercise provides you an opportunity to begin to familiarize yourself with typical distributions of commonly-measured seawater properties. You may find comparing the oxygen and silicate sections between the three major oceans intriguing.</p>
+</div>
+<p>Later on in the DPO JOA Examples we will plot original data from recent expeditions along the same tracks.</p>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="4d.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Example 4D: Vertical Distribution of Water Properties Along South-to-North Transects</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="4b.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Example 4B: Surface properties of world ocean waters</div>
+                
+              </div>
+            </a>
+        </div>
+
+        <div class="related-information">
+              Copyright &#169; Copyright © 2011 Elsevier Inc. All rights reserved. |
+          Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+          <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
+            | <a class="muted-link" href="../../_sources/dpo_joa_examples/chapter_4/4c.rst.txt"
+               rel="nofollow">
+              Show Source
+            </a>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Example 4C: Vertical Distribution of Water Properties Along South-to-North Transects</a><ul>
+<li><a class="reference internal" href="#exercise-4c-01-vertical-sections-making-a-contour-map-plot">Exercise 4C-01: Vertical Sections - Making a Contour Map Plot</a></li>
+<li><a class="reference internal" href="#exercise-4c-02-vertical-sections-examining-contour-map-plots">Exercise 4C-02: Vertical Sections - Examining Contour Map Plots</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/scripts/furo.js"></script>
+    </body>
+</html>

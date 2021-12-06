@@ -1,0 +1,386 @@
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="Chapter Six Supplement" href="../chapter_S6/index.html" /><link rel="prev" title="Example 6E: Maps of Properties on Extrema" href="6e.html" />
+
+    <meta name="generator" content="sphinx-4.3.1, furo 2021.11.23"/>
+        <title>Example 6F: Plotting Map of Average of Properties Between Two Surfaces - Descriptive Physical Oceanography JOA Examples</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?digest=7f0192ddeb2adecfbaa87ffbcf67d16358b30bc1" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?digest=0af69da206d614734f649b27d4cdc2dd6c31f41d" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  body[data-theme="dark"] {
+    --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+  }
+  @media (prefers-color-scheme: dark) {
+    body:not([data-theme="light"]) {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+  }
+</style></head>
+  <body>
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" />
+      <line x1="4" y1="6" x2="20" y2="6" />
+      <line x1="10" y1="12" x2="20" y2="12" />
+      <line x1="6" y1="18" x2="20" y2="18" />
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../index.html"><div class="brand">Descriptive Physical Oceanography JOA Examples</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
+  
+  
+  <span class="sidebar-brand-text">Descriptive Physical Oceanography JOA Examples</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../background/index.html">Background</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../background/about.html">About the DPO JOA Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../background/intro.html">Introduction and Brief History of Java OceanAtlas</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_1/index.html">Chapter One</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_S1/index.html">Chapter One Supplement</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter_2/index.html">Chapter Two</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_2/2a.html">Example 2A: Dimensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_2/2b.html">Example 2B: Sea-floor Dimensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_2/2c.html">Example 2C: Bathymetry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_2/2d.html">Example 2D: DPO Extra Topic; Map Projections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_2/2e.html">Example 2E: DPO Extra Topic; Making a .joa file</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter_3/index.html">Chapter Three</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_3/3a.html">Example 3A: Before we get started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_3/3b.html">Example 3B: Physical Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_3/3c.html">Example 3C: Effect of Temperature and Salinity on Compressibility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_3/3d.html">Example 3D: Static Stability and Brunt-Väisälä Frequency</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_3/3e.html">Example 3E: Sound in the Sea</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter_4/index.html">Chapter Four</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_4/4a.html">Example 4A: Before we get started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_4/4b.html">Example 4B: Surface properties of world ocean waters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_4/4c.html">Example 4C: Vertical Distribution of Water Properties Along South-to-North Transects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_4/4d.html">Example 4D: Vertical Distribution of Water Properties Along South-to-North Transects</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_5/index.html">Chapter Five</a></li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">Chapter Six</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="6a.html">Example 6A: Sections with Vertical Axes other than Pressure (or Depth)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="6b.html">Example 6B: Sections with horizontal axis other than distance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="6c.html">Example 6C: Exploiting some of JOA’s Mapping Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="6d.html">Example 6D: Maps of Properties on Density and Other Surfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="6e.html">Example 6E: Maps of Properties on Extrema</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Example 6F: Plotting Map of Average of Properties Between Two Surfaces</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter_S6/index.html">Chapter Six Supplement</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_S6/s6a.html">Example S6A: Before We Get Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_S6/s6b.html">Example S6B: A Vertical Profile Visualized from CTD, Bottle, and Multi-year Averaged Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_S6/s6c.html">Example S6C: A Vertical Section Visualized from CTD, Bottle, and Multi-year Averaged Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter_7/index.html">Chapter Seven</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_7/7a.html">Example 7A: Before we get started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_7/7b.html">Example 7B: Dynamic Topography Maps</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_S7/index.html">Chapter Seven Supplement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_8/index.html">Chapter Eight</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_S8/index.html">Chapter Eight Supplement</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter_9-14/index.html">Chapters Nine through Fourteen</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_9-14/intro_a.html">Example 9-14A: Before we get started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_9-14/intro_b.html">Example 9-14B: Introduction to JOA Maps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_9-14/intro_c.html">Example 9-14C: Extracting Data Subsets from Map Plots &amp; Advanced JOA Tools for Working with Basin-Scale Data Sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter_9-14/intro_d.html">Example 9-14D: Using Data Subsets &amp; Advanced JOA Tools</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_9/index.html">Chapter Nine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_10/index.html">Chapter Ten</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_11/index.html">Chapter Eleven</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_12/index.html">Chapter Twelve</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_13/index.html">Chapter Thirteen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_14/index.html">Chapter Fourteen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_S15/index.html">Chapter Fifteen Supplement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary.html">JOA Glossary</a></li>
+</ul>
+
+</div>
+</div>
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section id="example-6f-plotting-map-of-average-of-properties-between-two-surfaces">
+<h1>Example 6F: Plotting Map of Average of Properties Between Two Surfaces<a class="headerlink" href="#example-6f-plotting-map-of-average-of-properties-between-two-surfaces" title="Permalink to this headline">¶</a></h1>
+<p>JOA can also calculate the average of any parameter between two surfaces. Sometimes this is useful when one is trying to visualize distributions of an identifiable layer of water.</p>
+<p>Here we will look at the distribution of the weighted mean oxygen concentration between 250 and 750 decibars in the WOA05_NorthAtlantic_square.joa data file.</p>
+<p>Files that may be needed or created in this example:</p>
+<ul class="simple">
+<li><p>WOA05_NorthAtlantic_square.joa</p></li>
+</ul>
+<section id="exercise-6f-01">
+<h2>Exercise 6f-01<a class="headerlink" href="#exercise-6f-01" title="Permalink to this headline">¶</a></h2>
+<p>Continue from 6E-01:</p>
+<ul>
+<li><p><strong>Calculations → Station Parameters → Integration…</strong></p></li>
+<li><p>Set up the <strong>Station Integration Calculations</strong> panel for a calculation of the weighted mean of <strong>O2</strong> (dissolved oxygen) with respect to <strong>PRES</strong> (pressure) from <strong>250</strong> to <strong>750</strong> decibars over each profile as shown below:</p>
+<figure class="align-default" id="id1">
+<img alt="../../_images/fig6f-01.png" src="../../_images/fig6f-01.png"/>
+<figcaption>
+<p><span class="caption-text">Fig 6f-01 Station Integration Calculations dialog box</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>Click <strong>OK</strong>, the result will appear in the <strong>Data Window</strong></p></li>
+<li><p>With the open <strong>Orthographic Map Plot</strong> in the foreground, bring up the <strong>Configure Map Plot</strong> dialog box:</p>
+<ul class="simple">
+<li><p>Double-click or control-click on a map plot</p></li>
+<li><p>Or type [ctrl/cmd]-R or Edit → Edit: plotname when a map plot is the front-most window</p></li>
+</ul>
+</li>
+<li><p>Select the <strong>Station calculation values</strong> sub-panel of the <strong>Station Colors</strong> panel</p></li>
+<li><p>A list of all available station calculations will be shown. Select <strong>INT(O2-PRES,250.0-750.0)-td</strong> and then select the O2-global_cbr.xml color bar, as shown below:</p>
+<figure class="align-default" id="id2">
+<img alt="../../_images/fig6f-02.png" src="../../_images/fig6f-02.png"/>
+<figcaption>
+<p><span class="caption-text">Fig 6f-02 Station Calculation Values sub-panel of Station Colors panel of the Configure Map Plot dialog box</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>Click OK to get this updated plot:</p>
+<figure class="align-default" id="id3">
+<img alt="../../_images/fig6f-03.png" src="../../_images/fig6f-03.png"/>
+<figcaption>
+<p><span class="caption-text">Fig 6f-03 Orthographic plot</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</li>
+</ul>
+<div class="tip admonition">
+<p class="admonition-title">Examine</p>
+<p>This plot provides a clear illustration of the ventilation (oxygenation) of the Northern North Atlantic Ocean from the Labrador Sea and the Nordic Seas, with high oxygen waters spreading away from these regions. Note also the oxygen minima in the tropics, cut through in the equatorial zone due to the effects of equatorial upwelling.</p>
+</div>
+<div class="seealso admonition">
+<p class="admonition-title">Learn More</p>
+<p>A Virtual Research Cruise</p>
+<p>The oceanographic data used in the JOA DPO Examples come from hundreds of oceanographic research cruises. These cruises take months (usually years) of planning, then measurement specialists come together from different institutions and sometimes different countries, a research ship is readied, the work is done at sea, the data are processed at sea and ashore, and the data and related documentation are released for scientific use.</p>
+<p>It all begins with proposals from scientists to the agencies that support their work. The proposal identifies the science goals, the work to be done, the resources (people, equipment, supplies, and ship time) required, and the intended data and distribution of the data. Once the proposal is accepted for funding (this can take several iterations), ship time must be obtained. Oceanographic research ships are busy and expensive to operate, and scheduling the required ship time can take one or more years. The Chief Scientist meanwhile works with the ship operator and the various measurement teams to bring everything together at the appointed start port and date.</p>
+<p>The work at sea is organized carefully to bring about maximum scientific advantage with efficiency and close attention to safety. The scientific team is organized by measurement speciality, e.g., CTD operations, salinity/oxygen/nutrient chemistry, carbon chemistry, CFCs, Acoustic Doppler Current Profiling, data processing, etc., with a chief and co-chief scientist in charge overall. Typically each person works about 12 hours per day, every day of the week, until the work is done.</p>
+<p>The data themselves are carefully standardized and closely checked at sea and ashore for suitability, quality, and error. Often a “data quality code” is attached to each reported data value. Cruise documentation must be sufficient to inform a data user - perhaps many years in the future - of all information necessary to understand the origin, calibration, and quality of the data.</p>
+<p>To provide a view of a research cruise of the type that generates typical data used in the JOA DPO Examples, we have assembled text, photo, and video files - most from the 2007 “I8S” cruise of R/V Roger Revelle - into a virtual research cruise from proposal to final data report. This can be found at <a class="reference external" href="https://joa.ucsd.edu/outreach/virtualcruise/">https://joa.ucsd.edu/outreach/virtualcruise/</a></p>
+</div>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="../chapter_S6/index.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Chapter Six Supplement</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="6e.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Example 6E: Maps of Properties on Extrema</div>
+                
+              </div>
+            </a>
+        </div>
+
+        <div class="related-information">
+              Copyright &#169; Copyright © 2011 Elsevier Inc. All rights reserved. |
+          Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+          <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
+            | <a class="muted-link" href="../../_sources/dpo_joa_examples/chapter_6/6f.rst.txt"
+               rel="nofollow">
+              Show Source
+            </a>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Example 6F: Plotting Map of Average of Properties Between Two Surfaces</a><ul>
+<li><a class="reference internal" href="#exercise-6f-01">Exercise 6f-01</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/scripts/furo.js"></script>
+    </body>
+</html>

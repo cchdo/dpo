@@ -1,0 +1,33 @@
+Introduction and Brief History of Java OceanAtlas
+-------------------------------------------------
+
+Plotting Ocean Hydrographic Water Property Data
+
+Plots enrich interpretation of data. They are a window to discovery and understanding. Appropriate plots permit the eye to pick out the salient features of the data. So it is not surprising that oceanographers have developed a suite of useful plot types that aide data analyses. Some of the plots commonly used with oceanographic station and vertical profile data (such as temperature, salinity, dissolved oxygen, nutrient, CFC, ocean carbon and other data from CTD and bottle casts) include:
+
+* property plot with depth or pressure as the vertical axis
+* property-property plots
+* maps, for example of property values on some specified level or surface
+* vertical sections of a measured property versus depth or pressure, along a track
+
+Oceanographers have been making these types of plots for more than a century.
+
+Because ocean depths (or pressures) are measured as positive values relative to the sea surface, in order that plotted data appear sensibly, oceanographers use a left-hand coordinate system with depth or pressure as the Z axis. In other words, smaller values of ocean depth (or pressure) are above higher values of depth (or pressure) on the Z axis.
+
+Until relatively recently, the plots were made by hand. Property vs. depth (or pressure) and property-property plots were made on graph paper. Map plots were often made on thin paper which could be laid above a master map on a light table. And vertical section plots were made on long rolls of graph paper. Hence an oceanographer developed a stable of supplies such as an assortment of graph paper with various grids and scales, a roll of tracing paper or drafting vellum paper which could be overlaid on maps, master maps for the areas of interest, and one or more rolls of graph paper. One also had a light table for tracing maps, and drawers full of plotting supplies.
+
+Some raw plots represented a tremendous amount of labor. The data going into the plots were, of course, processed by hand, perhaps with the help of a mechanical calculator. Unprotected thermometer values were corrected for the temperature of the thermometer itself and then the temperature values were turned into depths. Protected thermometer values were corrected for the temperature of the thermometer itself and corrected against calibration records (which themselves had to be laboriously updated every few years). Salinity analyses were referenced to standards. And so forth. Most of that work was done by the staff at sea. Ashore or at sea, the staff then determined densities and potential temperatures by plotting data onto standard-sized plots on thin paper which were then overlaid on master plots, from which one could interpolate the "calculated" parameter. The data analysts then moved the data onto plots, manually copying values one by one. Map plots and vertical section plots were hand-contoured, often by the oceanographer or the most trusted analysts.
+
+Drafting specialists were employed by departments to trace final plots onto drafting vellum, and ink and label them. The final plots were then sent to a photographer who made a high quality negative - sometimes using film which recorded the equivalent of only pure black on pure white, no grays. The negatives were touched up and prints made to the standards of the publication for which the figures were destined. Color illustrations were restricted to laboriously-produced plates in a few great oceanographic atlases.
+
+Key, standardized black and white data plots, along with tables of data, were a standard feature of the data reports that were produced for each physical oceanographic expedition which focused on water property measurements. Occasionally an atlas of plots was produced. Such oceanographic atlases can be found in every oceanographic library and in many oceanographers' offices. The original inspiration for development of OceanAtlas for Macintosh (the long-ago successor to Java OceanAtlas) was of course these great printed atlases. The "Atlas of Oceanographic Sections, temperature - salinity - dissolved oxygen - silica, Davis Strait - Labrador Basin - Denmark Strait - Newfoundland Basin, 1965-1967", by A.B. Grant [Report Atlantic Oceanographic Laboratory, 68-5: 80pp, 1968 (unpublished manuscript)] was particularly interesting because the author wisely printed some of the most critical data values onto the contoured sections, allowing the reader to cross-compare different parameters from the same water sample by paging through the sections. What if this sort of data exploration could proceed in an even more nearly ad hoc fashion, despite the ever-increasing volume of data?
+
+Computers were, of course, immediately and enthusiastically put to use. For example, the advent of computers - these were at first huge institutional or departmental resources - meant that data calculations were speedy and accurate. The early large-format plotters were quickly turned to plotting the data values onto blank vertical sections, and making various property-property plots. Some groups, such as Joe Reid's group at SIO, became expert in plotting numerical values onto maps of various useful projections. The vertical section plots and the map plots were still contoured by hand - and the contoured results sent on to the drafting and photography departments.
+
+But the computer rapidly became much more than a powerful calculator. What if the tool's of the oceanographer's research staff could be combined with the data held in the shelves full of data reports lining the data office? What if one could display plots on a computer monitor? One would have what amounts to a massive, "live" electronic atlas of the oceans! Peter Rhines' demonstration of his IBM-PC application Atlast in 1989 kindled our imagination and drive. His great inspiration was to work with section-oriented data, avoiding the pitfalls inherent in mapping data onto surfaces - we knew there was a wealth of section data in the archives. Literally the same day that we saw Atlast we were at work on OceanAtlas for Macintosh. Naively we thought that "we would simply port Atlast to the Macintosh". By the time we completed OceanAtlas 1.0 in early 1991 only the algorithms for potential temperature and density remained!
+
+Much has changed in the 20 years we have worked on OceanAtlas, but the concept of a live electronic atlas, data plotting, and data exploration environment remains the core of the Java OceanAtlas application. Happy ocean data exploring!
+
+Jim Swift
+
+July 2009
