@@ -98,7 +98,13 @@ Pacific Ocean
     * WOA05_North_Pacific.joa
     * WOA05_South_Pacific.joa
 
-  Download: :download:`Chapter 10 Data Files <./DPO_data_chapter_10.zip>`
+  Download: :download:`Chapter 10 Pacific_sections<./Pacific_sections.7z>`
+
+  Download: :download:`Chapter 10 WOA98_heavideci_basin_global_gridded_data <./WOA98_heavideci_basin_global_gridded_data.7z>`
+
+  Download: :download:`Chapter 10 WOA_decimated_basin_global_gridded_data <./WOA_decimated_basin_global_gridded_data.7z>`
+
+  Download: :download:`Chapter 10 WOA_basin_global_gridded_data <./WOA_basin_global_gridded_data.7z>`
 
 Goals
 `````

@@ -22,7 +22,7 @@ Southern Ocean
 
     * WOA05_Southern.joa
 
-  Download: :download:`Chapter 13 Data Files <./DPO_data_chapter_13.zip>`
+  Download: :download:`Chapter 13 Data Files <./DPO_data_chapter_13.7z>`
 
 Goals
 `````

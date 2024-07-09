@@ -19,7 +19,7 @@ Ocean dimensions, shapes and bottom materials
 
   * A16S_2005_sta085_bottle.joa
 
-  Download: :download:`Chapter 3 Data Files <./DPO_data_chapter_3.zip>`
+  Download: :download:`Chapter 3 Data Files <./DPO_data_chapter_3.7z>`
 
 Goals
 `````

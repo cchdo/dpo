@@ -22,7 +22,7 @@ Typical distributions of water characteristics
   * WOA09_P16.joa
   * A16_2003_2005_clean_cfc.joa
 
-  Download: :download:`Chapter 4 Data Files <./DPO_data_chapter_4.zip>`
+  Download: :download:`Chapter 4 Data Files <./DPO_data_chapter_4.7z>`
 
   .. note::
     WOA05_surface.jos is a text data file (i.e., not JOA binary data files). This will be explained at the point where this file is used in the DPO JOA Examples.
