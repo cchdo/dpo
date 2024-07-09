@@ -25,7 +25,7 @@ Instruments and Methods
   * A16S_2005_undecimated__clean_CTD.joa
   * A16N_2003_undecimated__clean_CTD.joa
 
-  Download: :download:`Chapter S6 Data Files <./DPO_data_chapter_S6.zip>`
+  Download: :download:`Chapter S6 Data Files <./DPO_data_chapter_S6.7z>`
 
 Goals
 `````

@@ -67,7 +67,7 @@ Indian Ocean
 
       * I04S_I07N_1995_bottle.joa
 
-  Download: :download:`Chapter 11 Data Files <./DPO_data_chapter_11.zip>`
+  Download: :download:`Chapter 11 Data Files <./DPO_data_chapter_11.7z>`
 
 Goals
 `````

@@ -20,7 +20,7 @@ Ocean dimensions, shapes and bottom materials
   * SIO.joa
   * mycity.jos
 
-  Download: :download:`Chapter 2 Data Files <./DPO_data_chapter_2.zip>`
+  Download: :download:`Chapter 2 Data Files <./DPO_data_chapter_2.7z>`
 
 Goals
 `````

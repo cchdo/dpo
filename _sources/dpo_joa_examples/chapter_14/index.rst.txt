@@ -101,7 +101,15 @@ Global circulation and water properties
   
     * WOA05_Global.joa
 
-  Download: :download:`Chapter 14 Data Files <./DPO_data_chapter_14.zip>`
+  Download: :download:`Chapter 14 WOA09_global_grid_of_sections <./WOA09_global_grid_of_sections.7z>`
+
+  Download: :download:`Chapter 14 Global_sections <./Global_sections.7z>`
+
+  Download: :download:`Chapter 14 WOA98_heavideci_basin_global_gridded_data <./WOA98_heavideci_basin_global_gridded_data.7z>`
+
+  Download: :download:`Chapter 14 WOA_decimated_basin_global_gridded_data <./WOA_decimated_basin_global_gridded_data.7z>`
+
+  Download: :download:`Chapter 14 WOA_basin_global_gridded_data <./WOA_basin_global_gridded_data.7z>`
 
 Goals
 `````

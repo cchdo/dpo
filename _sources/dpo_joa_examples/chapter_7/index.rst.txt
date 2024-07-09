@@ -23,7 +23,7 @@ Dynamical processes for descriptive ocean circulation
   * WOA98_heavydeci_Atlantic.poa
   * WOA98_heavydeci_Indian.poa
 
-  Download: :download:`Chapter 7 Data Files <./DPO_data_chapter_7.zip>`
+  Download: :download:`Chapter 7 Data Files <./DPO_data_chapter_7.7z>`
 
 Goals
 `````

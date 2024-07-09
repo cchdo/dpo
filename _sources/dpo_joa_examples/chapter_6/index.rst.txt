@@ -22,7 +22,7 @@ Data analysis concepts and observational methods
   * WOA05_NorthAtlantic_square.joa
   * WOA09_P16.joa
 
-  Download: :download:`Chapter 6 Data Files <./DPO_data_chapter_6.zip>`
+  Download: :download:`Chapter 6 Data Files <./DPO_data_chapter_6.7z>`
 
 Goals
 `````

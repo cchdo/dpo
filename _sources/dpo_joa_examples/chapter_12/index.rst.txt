@@ -33,7 +33,7 @@ The Arctic Ocean and Nordic Seas
 
     * - WOA05_Arctic_1.joa
 
-  Download: :download:`Chapter 12 Data Files <./DPO_data_chapter_12.zip>`
+  Download: :download:`Chapter 12 Data Files <./DPO_data_chapter_12.7z>`
 
 Goals
 `````
