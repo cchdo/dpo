@@ -121,7 +121,8 @@ Atlantic Ocean
     * WOA05_Atlantic.joa
     * WOA05_NorthAtlantic_square.joa
 
-  Download: :download:`Chapter 9 Data Files <./DPO_data_chapter_9.zip>`
+  Download: :download:`Chapter 9 Data Files Part 1<./DPO_data_chapter_9_part1.zip>`
+  Download: :download:`Chapter 9 Data Files Part 2<./DPO_data_chapter_9_part2.zip>`
 
 Goals
 `````
