@@ -86,4 +86,5 @@ Also with
    dpo_joa_examples/chapter_13/index
    dpo_joa_examples/chapter_14/index
    dpo_joa_examples/chapter_S15/index
+   data_files
    glossary
