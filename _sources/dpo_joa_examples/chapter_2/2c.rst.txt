@@ -2,7 +2,7 @@ Example 2C: Bathymetry
 ======================
 
 The bathymetry of the oceans - the areal configuration of the ocean bottom - is not only interesting, but it is also crucial to ocean circulation and mixing.
-It is important to gain a basic understanding of the principal features of the sea floor. 
+It is important to gain a basic understanding of the principal features of the sea floor.
 Java OceanAtlas offers several features to help visualize ocean bathymetry.
 
 Files that may be needed or created in this example:
@@ -35,9 +35,9 @@ Files that may be needed or created in this example:
 
   Bathymetric contour lines:
 
-  JOA can alternatively and/or concurrently plot contours of bottom depth. 
-  (Refer to the upper panel of the **Bathymetry** panel of the **Configure Map Plot** dialog box.) 
-  In this case JOA is not actively contouring a data set such as the ETOPO; instead, it is adding a contour line that is stored in memory. 
+  JOA can alternatively and/or concurrently plot contours of bottom depth.
+  (Refer to the upper panel of the **Bathymetry** panel of the **Configure Map Plot** dialog box.)
+  In this case JOA is not actively contouring a data set such as the ETOPO; instead, it is adding a contour line that is stored in memory.
   (These contour lines were supplied to JOA courtesy of Professor Joseph Reid of the UCSD Scripps Institution of Oceanography.)
 
 
@@ -45,11 +45,11 @@ Exercise 2C-01: Bathymetry - Illustrating Bathymetry
 ----------------------------------------------------
 Continue from 2B-03:
 
-When **Color Fill Bathymetry** is selected on the **Bathymetry** page of the **Configure Map Plot** dialog box, the ETOPO-60 (or ETOPO-20) bathymetric grid data points are each colored on the JOA map plot based upon their elevation or depth, via the color scheme used in the chosen ROSE color bar. 
+When **Color Fill Bathymetry** is selected on the **Bathymetry** page of the **Configure Map Plot** dialog box, the ETOPO-60 (or ETOPO-20) bathymetric grid data points are each colored on the JOA map plot based upon their elevation or depth, via the color scheme used in the chosen ROSE color bar.
 Thus these yield one view of land elevations and ocean bathymetry (combining 'bathy' - deep, of the sea depths - with 'meter' - measure).
 
 .. note::
-  ROSE color bars are meant for coloring bathymetry and elevation. 
+  ROSE color bars are meant for coloring bathymetry and elevation.
   If you were to create your own bathymetry/elevation color bar, the name you assign it should follow the conventions used for the names of the ROSE color bars included with JOA.
 
 To more accurately assess the configuration of the bottoms of the oceans, you can add isobaths ('iso' - constant) to the map plot.
@@ -70,14 +70,15 @@ To more accurately assess the configuration of the bottoms of the oceans, you ca
   Your plot should look like this (or with multi-colored pixels if you had used the ROSE-map-like_cbr.xml bathymetry/elevation color bar instead of the ROSE-grayscale_cbr.xml color bar):
 
   .. figure:: figures/fig2c-01.png
+    :alt: Grayscale global map using mercator projection with 500 meter isobath
 
-  FIG 2c-01 JOA Mercator world map with grayscale ETOPO-60 bathymetry and 500-meter isobath in red
+    FIG 2c-01 JOA Mercator world map with grayscale ETOPO-60 bathymetry and 500-meter isobath in red
 
   .. admonition:: Examine
     :class: tip
 
-    The position of the 500 meter isobath might be used as a proxy for the edge of the continental shelf. 
-    (Actually the 200 meter isobath is a better choice for this purpose but JOA does not yet have a built in 200 meter contour.) 
+    The position of the 500 meter isobath might be used as a proxy for the edge of the continental shelf.
+    (Actually the 200 meter isobath is a better choice for this purpose but JOA does not yet have a built in 200 meter contour.)
     Thus the resulting plot will help one to visualize the varying extent of the continental shelf in different ocean regions.
 
 
@@ -108,7 +109,7 @@ For the following steps, use this technique:
     Do not pay too much attention to the high latitudes, north and south, with the Mercator projection. The high latitudes will be examined later under Map Projections.
 
 * Find:
-  
+
   * chains of seamounts and islands
   * submarine ridges
   * major sub-basins of each ocean
@@ -126,10 +127,10 @@ For the following steps, use this technique:
   .. admonition:: Examine
     :class: tip
 
-    The resulting **World Map** with 12 different isobaths is a bit of a mess, isn't it? 
+    The resulting **World Map** with 12 different isobaths is a bit of a mess, isn't it?
     But you can click-drag on any sub-region to plot its bathymetry in a separate window, thereby enlarging it.
 
-    Try making an enlargement of the ocean region from Indonesia to northern Japan on the south and north, and from China to the mid-Pacific on the west and east. 
+    Try making an enlargement of the ocean region from Indonesia to northern Japan on the south and north, and from China to the mid-Pacific on the west and east.
     This will enable the visualization of geographic features described in the text, such as island arcs, chains of islands, semi-enclosed marginal seas, and so forth.
-    
+
 * Try the same exercise in other regions to get a better feel for the lay of the ocean
