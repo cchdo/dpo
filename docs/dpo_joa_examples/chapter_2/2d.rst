@@ -1,8 +1,8 @@
 Example 2D: DPO Extra Topic; Map Projections
 ============================================
-It is essentially impossible to accurately map large regions of the spherical Earth onto flat maps. 
-Many different attempts have been made to provide realistic and useful flat maps. 
-The curved surface of the Earth must be projected onto a flat surface following a specified set of rules. 
+It is essentially impossible to accurately map large regions of the spherical Earth onto flat maps.
+Many different attempts have been made to provide realistic and useful flat maps.
+The curved surface of the Earth must be projected onto a flat surface following a specified set of rules.
 Each 'map projection' is optimized for a particular use or set of uses.
 
 Java OceanAtlas offers a small set of map projections, which will be explored next.
@@ -26,18 +26,18 @@ Exercise 2D-01: Map Projections - Analyzing Different Map Projections
   * Lambert azimuthal equal-area
   * Stereographic
 
-  .. note:: 
-    If you initiate a JOA map plot and simply hit **Plot** without changing anything in the **Configure Map Plot** dialog box, you will get a **Mercator World Map**. 
+  .. note::
+    If you initiate a JOA map plot and simply hit **Plot** without changing anything in the **Configure Map Plot** dialog box, you will get a **Mercator World Map**.
     But if you select the Orthographic, Mollweide, Lambert Azimuthal Equal Area, or Stereographic projection, then hit **Plot**, you will get a blank map plot. This is because these four JOA map projections work only if you also select a Plot Region via that dialog box.
 
     Regarding Plot Region, choices of the **World 160W Center** (Pacific), **World 120E Center** (Indian), or **World 60W Center** (Atlantic) preset map regions will produce useful results with any JOA map projections except the North and South pole projections.
 
 * What are a few telling aspects of each projection?
-  
+
   .. hint::
     Place sufficient :term:`latitude` and :term:`longitude` lines on the map (if necessary change their interval in the **Configure Map Plot** dialog box) to see both how the lines appear (straight versus curved) and also how they are relatively spaced north-south and east-west on the map plot.
 
-  .. hint:: 
+  .. hint::
     If the plot used for this projection comparison is not a World map plot, be sure to make the area of the Earth covered by the plot sufficiently large to include an entire ocean basin.
 
 
@@ -45,8 +45,9 @@ Exercise 2D-02: Polar Projections
 ---------------------------------
 * To view the global ocean from the perspective of the poles, set up a map plot with a polar projection.
 * Below is a **Configure Map Plot** dialog box set up to provide a view of the oceans north of 40°N from a North Pole perspective:
-  
+
   .. figure:: figures/fig2d-01.png
+    :alt: General settings tab of Configure Map Plot dialog window
 
     FIG 2d-01 Selecting a polar projection in the Configure Map Plot dialog box
 
@@ -56,6 +57,7 @@ Exercise 2D-02: Polar Projections
   The resulting plot looks like this:
 
   .. figure:: figures/fig2d-02.png
+    :alt: Grayscale map with a north polar projection
 
     FIG 2d-02 Map plot with a polar projection
 

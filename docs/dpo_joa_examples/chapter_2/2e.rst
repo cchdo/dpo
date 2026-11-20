@@ -12,8 +12,8 @@ Example 2E: DPO Extra Topic; Making a .joa file
   * In a Java OceanAtlas text (spreadsheet) data file, the minimum content of the header line is a :term:`station <stations>` number (**STATION**), :term:`latitude` (**LATITUDE**), :term:`longitude` (**LONGITUDE**) and :term:`pressure` (**PRES**), each separated by a standard character, usually a tab character.
   * Java OceanAtlas utilizes positions expressed in decimal degrees, with negative for south latitudes and for west longitudes.
   * Java OceanAtlas works with any **pressure**-sequenced data. Pressure (abbreviated PRES in Java OceanAtlas) is used because it is now more commonly measured than depth as the vertical index when water samples are collected.
-  * Normally the pressures used by Java OceanAtlas are meant to be the pressure values at the level of each set of property measurements at that station. 
-    In most cases there are also headers and data for the water properties measured at the pressures/levels for each measurement, such as temperature (**TEMP**) or salinity (**SALT**). 
+  * Normally the pressures used by Java OceanAtlas are meant to be the pressure values at the level of each set of property measurements at that station.
+    In most cases there are also headers and data for the water properties measured at the pressures/levels for each measurement, such as temperature (**TEMP**) or salinity (**SALT**).
     There may be one to several thousand pressures/levels at each station. JOA does not, however, require that there be more than one station with one level (one pressure), and JOA does not require that there be any measured data, other than pressure, at the level(s) of measurement.
 
 Files that may be needed or created in this example:
@@ -38,8 +38,9 @@ Here we show you how to make your own JOA data file, similar to SIO.joa, yet in 
 * Start Java OceanAtlas (on most computers by double-clicking on its icon).
 * **File → Open…** → mycity.jos
 * The Java OceanAtlas **Spreadsheet Import Options** dialog box will open up, and look approximately like this:
-  
+
   .. figure:: figures/fig2e-01.png
+    :alt: Spreadsheet import options
 
     FIG 2e-01 Java OceanAtlas Spreadsheet Import Options dialog box
 
@@ -47,6 +48,7 @@ Here we show you how to make your own JOA data file, similar to SIO.joa, yet in 
   It will look approximately like this:
 
   .. figure:: figures/fig2e-02.png
+    :alt: JOA data window with one selected station
 
     FIG 2e-02 Java OceanAtlas Data Window
 
